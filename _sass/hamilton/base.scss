@@ -106,15 +106,15 @@ a {
 blockquote {
   border-left: 0.1em solid;
   padding-left: $spacing-unit;
-  font-style: italic;
+  
 
   > :last-child {
     margin-bottom: 0;
   }
 
-  i, em {
-    font-style: normal;
-  }
+  // i, em {
+  //   font-style: normal;
+  // }
 }
 
 /**

@@ -4,6 +4,9 @@ author: 강지수 / Jisoo Kang
 avatar: /jj.jpg
 email: ji_soo_o@korea.ac.kr
 skin: daylight
+subscribe: False
+location: korea 
+
 
 plugins:
   - jekyll-seo-tag
