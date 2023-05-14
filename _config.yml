@@ -1,8 +1,9 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
-avatar: /logo.png
-email: ngzhio@gmail.com
+title: Jisoo's Blog
+description: 듄듄
+author: 강지수 / Jisoo Kang
+avatar: /jj.jpg
+email: ji_soo_o@korea.ac.kr
+skin: daylight
 
 plugins:
   - jekyll-seo-tag
