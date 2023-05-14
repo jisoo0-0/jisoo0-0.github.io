@@ -1,5 +1,5 @@
 title: Jisoo's Blog
-description: 듄듄
+description: Daily Review blog
 author: 강지수 / Jisoo Kang
 avatar: /jj.jpg
 email: ji_soo_o@korea.ac.kr
@@ -30,15 +30,4 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-twitter:
-  username: ngzhio
-  card: summary
-logo: logo.png
-social:
-  name: Shangzhi Huang
-  links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
-lang: en
+lang: kor
