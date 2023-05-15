@@ -3,75 +3,87 @@ layout: page
 title: About
 permalink: /about/
 ---
+# <center>Education</center>
+
+**Busan Foreign Language High School**    
+March, 2014 -February, 2016   
+
+**Seoul Institute of the Arts**     
+March,2016 - Withdrawal     
+
+**Seoul Women’s University** (BS)    
+March, 2019 - February, 2023   
+*School of Business Administration*     
+*School of Software Convergence*   
+	- GPA: **4.24/4.5**
+
+**Korea University**, (MS/Ph.D)   
+September, 2022 – **Current**   
+*School of Industrial and Management Engineering*      
 
 
-## Education
 
-- Busan Foreign Language High School
-	- Graduation Date : February, 2016
-- Seoul Institute of the Arts
-	- Graduation Date : Withdrawal
-- Seoul Women’s University   
-	    *Bachelor of Business Administration*   
-	    *Bachelor of Software Convergence*
-	- Graduation Date : February, 2023 
-	- GPA: 4.24/4.5
-- Korea University  
-	    *Industrial and Management Engineering*
-	- September, 2022 – Current(MS/Ph.d student)
-
-
-## Research Experiments
- - Development of an AI service platform based on Big Data    
-    *February, 2021 – December, 2021*
-    - Off-campus assignments
-    - Hosted by the Ministry of Land, Infrastructure and Transport
-    - Designing AI model for classifying image’s sentiment
-	- Role 
-		- Undergraduate researcher
-	- Language
-		 - python
-	- Research Results (Only the ones that I’ve participated in.)
-		 - Software registration
-		 - International Conference paper(First Author)
-	     - Results paper
-
- - Drone’s object Detection with Artificial Intelligence   
-    *February, 2021 – December, 2021*
-	- Off-campus assignments
-    - Designing energy-efficient Tracking Algorithm for Drone
-    - Language
-        - python
-    - Role
-        - Undergraduate researcher
-    - Research Results (Only the ones that I’ve participated in.)
-        - Software registration
-        - Patent application
-        - Domestic poster presentation(First Author)
-        - International Conference paper(First Author)
-
-## EXTERNAL ACTIVITIES
-- Seoul National University Hospital Interpreter Volunteering 
-	- September, 2019 – December, 2019 
-- Ministryof Foreign Affairs Supporters  
-	- December, 2019 – February, 2020 
-- LG Supporters(Think Earth) 
-	- October, 2020 – December, 2020 
-- Study Group Mentoring(C++) 
-	- February, 2022 – June, 2022
-- Study Group Mentoring(Python) 
-	- February, 2022 – June, 2022
-
-## SKILLS
-- Software Tool Skills
-	- Python
-	- C++
-	- java
-	- R
+# <center>Projects</center>
+**Development of an AI service platform based on Big Data**     
+*February, 2021 – December, 2021*   
+Hosted by the **Ministry of Land, Infrastructure and Transport**    
+- Role   
+	- Undergraduate researcher   
+	- Designing AI model for classifying image’s sentiment
 - Language
-	- Korean(native)
+	- python   
+- Research Results (Only the ones that I’ve participated in.)
+	- Software registration
+	- International Conference paper(First Author)
+	- Results paper
+
+**Drone’s object Detection with Artificial Intelligence**   
+*February, 2021 – December, 2021*   
+On-campus assignments 
+- Language
+	- python
+- Role
+	- Undergraduate researcher   
+	- Designing energy-efficient Tracking Algorithm for Drone
+- Research Results (Only the ones that I’ve participated in.)
+	- Software registration
+	- Patent application
+	- Domestic poster presentation(First Author)
+	- International Conference paper(First Author)
+
+
+
+# <center> EXTERNAL ACTIVITIES</center>
+**Seoul National University Hospital Interpreter Volunteering**    
+September, 2019 – December, 2019     
+
+**Ministryof Foreign Affairs Supporters**    
+December, 2019 – February, 2020      
+
+**LG Supporters(Think Earth)**    
+October, 2020 – December, 2020     
+
+**Study Group Mentoring(C++)**    
+February, 2022 – June, 2022    
+
+**Study Group Mentoring(Python)**     
+February, 2022 – June, 2022    
+
+
+
+# <center> SKILLS </center>
+**Software Tool Skills**    
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white)
+
+**Language**    
+	- Korean(native)    
 	- English(intermediate, tofel 91)
 
-## SCHOLARSHIPS
-- Academic Scholarship of Software (2020-1)
-- Academic Excellent Scholarship (2021-1)
+
+
+# <center> SCHOLARSHIPS </center>    
+**Academic Scholarship of Software** (2020-1)    
+**Academic Excellent Scholarship** (2021-1)
