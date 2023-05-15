@@ -125,8 +125,8 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
         - 시계열로도 instantiated될 수 있음
         - instantiated : 설명되다
         - Instances : ~을 예로 들다
-    <img src="/imgs/Untitled4.png" width="90%" height="90%" title="제목" alt="아무거나"/>
-    ![Untitled](/imgs/Untitled4.png)
+    <img src="../imgs/Untitled4.png" width="90%" height="90%" title="제목" alt="아무거나"/>
+    ![Untitled](/_posts/imgs/Untitled4.png)
     
     - **Covid와 같은 경우, 현재 이미지로 변환되어 입력값으로 들어갈 예정이니까 Matrix(2D), Event으로 설명되는게 맞음**
 
