@@ -261,9 +261,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
     - LA의 범죄 분포를 predict
     - 2 stage으로 구성되어 있음
         - stage 1에서는 raw crime point data가 crime heat map으로 변형
-        - stage 2에서는 계층적 구조를 사용해서 모델을 학습   
-
-
+        - stage 2에서는 계층적 구조를 사용해서 모델을 학습
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
