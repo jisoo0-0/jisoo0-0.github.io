@@ -6,6 +6,13 @@ email: ji_soo_o@korea.ac.kr
 skin: daylight
 subscribe: False
 location: korea 
+comments:
+  provider    : "disqus"                                # comment 처리 사이트 명칭 기재
+              # false (default), "disqus", "discourse", "facebook"
+              # "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname : "eona1301-github-io"                    # disqus의 shortname 기재
+              # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 
 plugins:
@@ -19,6 +26,12 @@ paginate: 10
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
 # google_analytics: 
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-ETCJG42GCW"
+    anonymize_ip         : # true, false (default)
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
 # 
@@ -34,20 +47,7 @@ exclude:
 # Jekyll SEO Tag (Optional)
 # =========================
 lang: kor
-analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-ETCJG42GCW"
-    anonymize_ip         : # true, false (default)
 
-comments:
-  provider    : "disqus"                                # comment 처리 사이트 명칭 기재
-              # false (default), "disqus", "discourse", "facebook"
-              # "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname : "eona1301-github-io"                    # disqus의 shortname 기재
-              # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETCJG42GCW"></script>
