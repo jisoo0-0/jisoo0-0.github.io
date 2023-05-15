@@ -10,6 +10,8 @@ Covid GCN
 ##### 논문 및 사진 출처
 >Wang, Senzhang, Jiannong Cao, and Philip Yu. "Deep learning for spatio-temporal data mining: A survey." IEEE transactions on knowledge and data engineering (2020).    
 
+##### 사담
+Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data에 대한 deep learning 연구를 잘 정리한 survey를 찾아서 블로그에 기록한다. 
 
 
 # 0 Abstract
@@ -247,13 +249,6 @@ Covid GCN
 - Region Trans?
     - 여러개의 ConvLSTM layer을 포함하여 데이터 속에 숨어있는 spatio-temporal한 패턴을 catch함
 
-### 4-1-1 Event
-
-- ST-ResNet
-    - LA의 범죄 분포를 predict
-    - 2 stage으로 구성되어 있음
-        - stage 1에서는 raw crime point data가 crime heat map으로 변형
-        - stage 2에서는 계층적 구조를 사용해서 모델을 학습
 
 
 
