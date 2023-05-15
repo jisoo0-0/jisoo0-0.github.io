@@ -3,6 +3,7 @@ layout: post
 categories: Graph
 tags: SpatioTemporal
 comments: true
+disqus: 'https-jisoo0-0-github-io' 
 ---
 
 
@@ -246,12 +247,21 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
             
         - LSTM에서 cell state를 업데이트하는 것이 가장 중요 한 일이며, **'gate**라는 구조가 cell state에 정보를 더하거나 제거하는 조절 기능을 합니다.
         >출처 : [https://hyen4110.tistory.com/25](https://hyen4110.tistory.com/25)
-- **tried to apply ConvLSTM to other spatial map prediction tasks of different domains [1], [5], [24], [61], [64], [89], [143], [195]. [143] proposed a novel cross-city transfer learning method named RegionTrans for joint spatio-temporal data prediction among different cities.**
 - Region Trans?
     - 여러개의 ConvLSTM layer을 포함하여 데이터 속에 숨어있는 spatio-temporal한 패턴을 catch함
 
-
-
+<br/>
+<br/>
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-jisoo0-0-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

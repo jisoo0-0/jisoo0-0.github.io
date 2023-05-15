@@ -7,9 +7,7 @@ skin: daylight
 subscribe: False
 location: korea 
 
-disqus:
-  comments: true 
-  shortname: https://jisoo0-0.github.io/                    # disqus의 shortname 기재
+                  # disqus의 shortname 기재
 
 
 plugins:
@@ -27,7 +25,7 @@ google_analytics: G-ETCJG42GCW
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
 # 
-# disqus:
+disqus: 'https-jisoo0-0-github-io'  
 
 # Jekyll
 # ======
