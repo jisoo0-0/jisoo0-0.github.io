@@ -34,3 +34,9 @@ exclude:
 # Jekyll SEO Tag (Optional)
 # =========================
 lang: kor
+analytics:
+  provider               : "google-gtag" 
+                          # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          : "G-ETCJG42GCW"
+    anonymize_ip         : # true, false (default)
