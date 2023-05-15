@@ -41,7 +41,13 @@ analytics:
     tracking_id          : "G-ETCJG42GCW"
     anonymize_ip         : # true, false (default)
 
-
+comments:
+  provider    : "disqus"                                # comment 처리 사이트 명칭 기재
+              # false (default), "disqus", "discourse", "facebook"
+              # "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname : "eona1301-github-io"                    # disqus의 shortname 기재
+              # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ETCJG42GCW"></script>
