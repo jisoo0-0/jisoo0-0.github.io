@@ -26,12 +26,8 @@ paginate: 10
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
 # google_analytics: 
-google_analytics:
-  provider               : "google-gtag" 
-                          # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          : "G-ETCJG42GCW"
-    anonymize_ip         : # true, false (default)
+google_analytics: G-ETCJG42GCW
+
 
 # Uncomment the below lines and set the Disqus shortname for enabling Disqus
 # 
@@ -48,13 +44,3 @@ exclude:
 # =========================
 lang: kor
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ETCJG42GCW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ETCJG42GCW');
-</script>
