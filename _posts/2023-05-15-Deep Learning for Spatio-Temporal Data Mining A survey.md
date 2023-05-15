@@ -63,7 +63,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
     - l : event 가 일어난 장소
     - t : event가 일어난 시간
         
-        ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled.png)
+        ![Untitled](image/Untitled.png)
         
 - Event Data의 응용 분야
     - criminology
@@ -81,7 +81,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
     - 주로 GPS와 같이 움직이는 object에 붙은 location sensor를 통해서 얻을 수 있음
     - (location, time)간의 연속적인 집합으로 표현 가능
         
-        ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%201.png)
+        ![Untitled](image/Untitled%201.png)
         
 
 ### 2-1-3 Point Reference Data
@@ -90,7 +90,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
     - 점이 이동하면서 데이터가 변하는 것을 말하는 것 같음
 - EX : 기상 측정 풍선이 이동하면서 생성하는 기상 데이터나, 온도 센서에 의해 측정된 해수면 온도의 점 기준 데이터
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%202.png)
+    ![Untitled](image/Untitled%202.png)
     
     - 두개의 타임스템프에 관한 figure
 
@@ -101,7 +101,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 - EX: 도시별로 수집된 미세먼지 농도 데이터 , road 마다 수집된 traffic flow 데이터
 - 예시 사진
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%203.png)
+    ![Untitled](image/Untitled%203.png)
     
 
 ### 2-1-5 Video Data
@@ -126,7 +126,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
         - instantiated : 설명되다
         - Instances : ~을 예로 들다
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%204.png)
+    ![Untitled](_posts/imgs/Untitled%204.png)
     
     - **Covid와 같은 경우, 현재 이미지로 변환되어 입력값으로 들어갈 예정이니까 Matrix(2D), Event으로 설명되는게 맞음**
 
@@ -146,14 +146,14 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 
 - RBM, CNN, Graph CNN, RNN, LSTM, AE/SAE, seq2seq을 간단히 설명할 것
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%205.png)
+    ![Untitled](image/Untitled%205.png)
     
 
 ### [3-1-1 Restricted Boltzmann Machines (RBM)](https://angeloyeo.github.io/2020/10/02/RBM.html)
 
 - RBM은 2개의 layer으로 구성된 stochastic(확률적) neural network임
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%206.png)
+    ![Untitled](image/Untitled%206.png)
     
     - **무방향 이분 그래프**
     - RBM에 속한 모든 노드들은 가중치가 있는 엣지들로 연결되어 있음
@@ -166,7 +166,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 - CNN 구성 요소 : 인풋 레이어, CNN 레이어, 풀링 레이어, fully connected layer, 출력 레이어
 - pooling layer이후에 정규화 레이어 추가 가능
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%207.png)
+    ![Untitled](image/Untitled%207.png)
     
     - raw image 를 input으로 받으면, CNN layer가 high level latent feature을 여러개의 kernel(filter)을 통해서 학습하게 됨
     - 이후, high level feature들이 pooling layer으로 input되고, spatial 차원을 통해 downsampling 작업이 진행되며(차원축소 말하는듯), 이 때 파라미터의 수가 줄어든다
@@ -177,7 +177,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 
 - Pooling operation에 따라서 각 노드의 이웃 노드들에 대해서 convolutional transformation을 적용함.
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%208.png)
+    ![Untitled](image/Untitled%208.png)
     
     - 여러개의 graph convolution layer을 stack 함으로서, 각 노드에 대한 latent embedding은 여러개의 홉만큼 더 떨어진 노드에 대한 더 많은 정보를 가질 수 있게 된다.
     - 그래프에 있는 노드에 대해 latent embedding이 끝나면, latent embedding을 feed-forward network에 넣어서 classification / regression task를 진행할 수 있음
@@ -191,12 +191,12 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 - Xt는 input data, A는 network의 파라미터, ht는 학습된 hidden state을 의미함
 - RNN의 가장 주된 문제점은 gradient 가 vanishing함에 따라서, short term memory 이슈가 발생한다는 것 → **이를 해결하기 위한 방안이 LSTM**
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%209.png)
+    ![Untitled](image/Untitled%209.png)
     
 - LSTM은 인풋 데이터의 long-term dependencies를 학습할 수 있음
 - specially 설계된 메모리 유닛 덕분에 더 긴 historical info를 기억할 수 있음
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%2010.png)
+    ![Untitled](image/Untitled%2010.png)
     
     - LSTM 구성  : input gate, forget gate, output gate
     - 세개의 게이트를 통해서 새로운 input을 들여보낼 것인지, 중요하지 않은 정보를 무시할 것인지, 해당 정보를 출력에 영향을 미치게 할 것인지를 정함
@@ -205,7 +205,7 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 
 - 입출력의 길이가 고정됨
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%2011.png)
+    ![Untitled](image/Untitled%2011.png)
     
     - Seq2Seq 구성 요소 : encoder, intermediate vector, decoder
     - sequence data간의 dependencies를 잘 포착하는 편
@@ -224,14 +224,14 @@ Due to the powerful ability in capturing the correlations in the spatial domain,
 - spatial correlation을 반영하고 싶다면, GCNN을 사용하는 것이 좋은 선택이 될 수 있고, STD가 만약 image-like matrix으로 표현된다면 CNN이 적절한 선택일 것.
 - **If the input is a sequence of image-like matrices, hybrid models that combine CNN and RNN such as ConvLSTM can be used [1], [61].**
     
-    ![yes.JPG](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/yes.jpg)
+    ![yes.JPG](image/yes.jpg)
     
 
 # 4 Deep Learning Models for Addressing STDM problems
 
 - One can see the largest problemcategory is prediction, accounting for more than 70 percent works.
     
-    ![Untitled](Deep%20Learning%20for%20Spatio-Temporal%20Data%20Mining%20A%20Su%2005ffb8993a1d41969b31dad539a65f23/Untitled%2012.png)
+    ![Untitled](image/Untitled%2012.png)
     
 
 ## 4-1 Predictive Learning
