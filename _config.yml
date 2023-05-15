@@ -40,3 +40,15 @@ analytics:
   google:
     tracking_id          : "G-ETCJG42GCW"
     anonymize_ip         : # true, false (default)
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ETCJG42GCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ETCJG42GCW');
+</script>
