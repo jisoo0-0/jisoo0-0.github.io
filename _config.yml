@@ -6,13 +6,8 @@ email: ji_soo_o@korea.ac.kr
 skin: daylight
 subscribe: False
 location: korea 
-comments:
-  provider    : "disqus"                                # comment 처리 사이트 명칭 기재
-              # false (default), "disqus", "discourse", "facebook"
-              # "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname : "eona1301-github-io"                    # disqus의 shortname 기재
-              # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+comments: true
+disqus: "https://jisoo0-0.github.io/"                    # disqus의 shortname 기재
 
 
 plugins:
