@@ -26,7 +26,7 @@ paginate: 10
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 
 # google_analytics: 
-analytics:
+google_analytics:
   provider               : "google-gtag" 
                           # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
