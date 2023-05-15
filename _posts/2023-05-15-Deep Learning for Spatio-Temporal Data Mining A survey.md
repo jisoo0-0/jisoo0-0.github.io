@@ -2,6 +2,7 @@
 layout: post
 categories: Graph
 tags: SpatioTemporal
+comments: true
 ---
 
 

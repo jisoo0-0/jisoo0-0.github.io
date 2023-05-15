@@ -6,8 +6,10 @@ email: ji_soo_o@korea.ac.kr
 skin: daylight
 subscribe: False
 location: korea 
-comments: true
-disqus: "https://jisoo0-0.github.io/"                    # disqus의 shortname 기재
+
+disqus:
+  comments: true 
+  shortname: https://jisoo0-0.github.io/                    # disqus의 shortname 기재
 
 
 plugins:
