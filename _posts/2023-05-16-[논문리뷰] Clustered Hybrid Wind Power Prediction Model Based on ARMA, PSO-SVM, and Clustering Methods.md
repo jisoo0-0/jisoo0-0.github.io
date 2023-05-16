@@ -121,7 +121,7 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 
 - 논문에서 제안한 모델은 과거 데이터에 기반함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=/1Ok11D69Laz4s2H2DdTOhDhJYnAhWp3Nw){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1Ok11D69Laz4s2H2DdTOhDhJYnAhWp3Nw){: width="80%" height="80%"}{: .center}
     
 - 클러스터링 이론에 따라서, 일년치의 과거 데이터는 열개의 클러스터링으로 나누어지게 됨
     - **이 때 각기 다른 시간과 특성에 따라서 나누어지게 되고, 본 논문에서 제안된 모델은 각기다른 파라미터를 통해 각 클러스터를 기반으로 학습됨**
