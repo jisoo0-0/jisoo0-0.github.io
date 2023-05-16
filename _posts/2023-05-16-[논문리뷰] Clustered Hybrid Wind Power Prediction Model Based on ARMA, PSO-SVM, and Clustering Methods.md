@@ -12,8 +12,8 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 >Wang, Yurong, Dongchuan Wang, and Yi Tang. "Clustered hybrid wind power prediction model based on ARMA, PSO-SVM, and clustering methods." IEEE Access 8 (2020): 17071-17079.
 
 <aside>
-`💡 요약 : 기존에 있던 ARMA 모델과 PSO-SVM 모델을 합쳐서 시계열 예측 모델을 구성함. 
-여러개의 모델을 합쳐서 전반적인 풍력 예측의 성능을 놓쳤고, 본 논문에서는 시계열 방법과 inteligent method를 합쳐서 좀 더 값진 정보를 얻음과 동시에 정확도를 향상시킬수 있었다고 함`
+💡 요약 : 기존에 있던 ARMA 모델과 PSO-SVM 모델을 합쳐서 시계열 예측 모델을 구성함. 
+여러개의 모델을 합쳐서 전반적인 풍력 예측의 성능을 놓쳤고, 본 논문에서는 시계열 방법과 inteligent method를 합쳐서 좀 더 값진 정보를 얻음과 동시에 정확도를 향상시킬수 있었다고 함
 
 </aside>
 # 0 Abstract
