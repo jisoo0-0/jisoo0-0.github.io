@@ -1,7 +1,7 @@
 ---
 layout: post
-categories: Graph
-tags: SpatioTemporal
+categories: 논문리뷰
+tags: SpatioTemporal, Graph
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 ---
@@ -18,7 +18,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 
 # 0 Abstract
 
-- GPS, 모바일 기계, remote sensing 등의 기술 진볼 인해서 STD(Spatio-Temporal Data)가 많이 증가했음.
+- GPS, 모바일 기계, remote sensing 등의 기술 진보로 인해서 STD(Spatio-Temporal Data)가 많이 증가했음.
 - STD를 통한 Data mining은 실생활 application(인간 mobility 이해, 스마트 이동수단, urban planning, 공공 안전, health care, 환경 관리 등)에 중요한 역할을 함.
 
 # 1 Introduction
@@ -31,7 +31,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
         - crime prediction
     - Human mobility
         - human trajectory pattern mining
-- Classical Data Mining을 STD에 적용했을 때, 성능이 엄청 안좋게 나오는 이유에 대해서 논문은 이렇게 설명한다. 
+- Classical Data Mining을 STD에 적용했을 때, 성능이 안좋게 나오는 이유에 대해서 논문은 이렇게 설명한다. 
     - STD는 연속적인 공간에 임베딩되지만, 전통적인 데이터셋은 아니기 때문
     - STD의 패턴은 시공간의 특징을 반영하는데, 이건 전통적인 방법이 capture하기 힘든 정도의 복잡성과 데이터 상관관계를 포함하고 있음
     - 전통적인 통계 기반 데이터 마이닝에서는 데이터가 독립적으로 생성됨을 가정하지만, STD는 self correlated되어 있음
