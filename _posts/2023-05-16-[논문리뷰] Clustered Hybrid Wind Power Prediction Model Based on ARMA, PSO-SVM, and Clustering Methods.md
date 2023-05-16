@@ -4,12 +4,12 @@ categories: 논문리뷰
 tags: Timeseries
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
-title: r"[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARMA, PSO-SVM, and Clustering Methods"
+title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARMA, PSO-SVM, and Clustering Methods"
 ---
-    
+
+
 ##### 논문 및 사진 출처
 >Wang, Yurong, Dongchuan Wang, and Yi Tang. "Clustered hybrid wind power prediction model based on ARMA, PSO-SVM, and clustering methods." IEEE Access 8 (2020): 17071-17079.
-</br>
 
 <aside>
 💡 기존에 있던 ARMA 모델과 PSO-SVM 모델을 합쳐서 시계열 예측 모델을 구성함. 

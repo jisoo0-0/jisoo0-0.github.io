@@ -4,7 +4,7 @@ categories: 논문리뷰
 tags: SpatioTemporal, Graph
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
-title: r"[논문리뷰] Deep learning for spatio-temporal data mining: A survey"
+title: "[논문리뷰] Deep learning for spatio-temporal data mining: A survey"
 ---
 
 
