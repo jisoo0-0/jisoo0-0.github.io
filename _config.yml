@@ -6,7 +6,7 @@ email: ji_soo_o@korea.ac.kr
 skin: daylight
 subscribe: False
 location: korea 
-
+lang: kor
                   # disqus의 shortname 기재
 
 
@@ -36,5 +36,5 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-lang: kor
+
 
