@@ -17,7 +17,7 @@ March, 2019 - February, 2023
 *School of Software Convergence*   
 	- GPA: **4.24/4.5**
 
-**Korea University**, (MS/Ph.D)   
+**Korea University**, (MS/Ph.D)
 September, 2022 – **Current**   
 *School of Industrial and Management Engineering*      
 
