@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 논문리뷰
-tags: IO, SensorData
+tags: timeseries
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time Series Forecasting"
