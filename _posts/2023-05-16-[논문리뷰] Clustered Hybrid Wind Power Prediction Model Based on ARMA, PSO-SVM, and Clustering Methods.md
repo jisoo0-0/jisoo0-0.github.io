@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 논문리뷰
-tags: Timeseries
+tags: timeseries
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARMA, PSO-SVM, and Clustering Methods"
