@@ -6,13 +6,13 @@ comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 ---
-###목차
-[0 ASR System](#-0-ASR-System)
-[0.1 ASR System이란?](##-0.1-ASR-System이란?)
-[1 RASR / RETURNN / Comformer](#1-RASR-/-RETURNN-/-Comformer)
-[1.1 RASR](##-1.1-RASR)
-[1.2 RETURNN](##-1.2-RETURNN)
-[1.3 Comformer](#-1.3-Comformer)
+###목차<br/>
+[0 ASR System](#-0-asr-system)<br/>
+[0.1 ASR System이란?](##-0.1-asr-system이란?)<br/>
+[1 RASR / RETURNN / Comformer](#1-rasr-/-returnn-/-comformer)<br/>
+[1.1 RASR](##-1.1-rasr)<br/>
+[1.2 RETURNN](##-1.2-returnn)<br/>
+[1.3 Comformer](#-1.3-comformer)<br/>
 
 
 # 0 ASR System
