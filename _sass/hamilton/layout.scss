@@ -1,7 +1,7 @@
 /**
  * Site container
  */
-.site-container {
+ .site-container {
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -267,7 +267,6 @@ ul.social-icons {
   border-radius: 50%;
 }
 
-
 .toc-title {
   text-align: center;
   font-weight: bold;
@@ -531,7 +530,7 @@ ul.post-categories {
     @include relative-font-size(1.4);
 
     @media screen and (min-width: $on-large) {
-      @include relative-font-size(1.3);
+      @include relative-font-size(1.5);
     }
   }
 
@@ -559,7 +558,7 @@ ul.post-categories {
       margin-top: $spacing-unit / 3;
     }
 
-    p,  pre, figure, iframe, %vertical-rhythm {
+    p, blockquote, pre, figure, iframe, %vertical-rhythm {
       margin-bottom: $spacing-unit / 3;
     }
   }
