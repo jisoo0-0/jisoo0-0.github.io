@@ -49,14 +49,14 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
     - 전체 input batch가 할당된다면 당연히 training time이 증가될 것이기에 본 연구에서는 아래 figure과 같이 downsampling을 진행함
         - 하지만 다운샘플링을 하게된다면, frame 별로 계산되는 loss objective function과 target의 개수가 달라지게 되고 이를 해결하기 위하여 transpose convolution을 사용해서 upsampling을 적용해줌
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1AnhFR63Q6ib3wi-ILZULH6mN-n_pj32W){: width="80%" height="80%"}{: .center}
+            ![Untitled](http://drive.google.com/uc?export=view&id=1AnhFR63Q6ib3wi-ILZULH6mN-n_pj32W){: width="100%" height="100%"}{: .center}
             
 
 ### 1.1.4 Training Methods – ETC
 
 - 기타 학습 기법
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1FGb3fKyE3uDSPMrBWiT1NsX1iUMDNwtU){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1FGb3fKyE3uDSPMrBWiT1NsX1iUMDNwtU){: width="100%" height="100%"}{: .center}
     
     - intermediate loss
         - 이를 사용해서 training stability를 높이려고 함
@@ -98,7 +98,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 
 - It’s overall architecture
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1yfUnX8rjsiLuEC4B95E5DI4DETy288cV){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1yfUnX8rjsiLuEC4B95E5DI4DETy288cV){: width="100%" height="100%"}{: .center}
     
 
 ## 2.1 SpecAug
@@ -107,7 +107,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 > 
 - Spec Aug 위치
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1WbEYQeEyyYUfgY9s8vSCUDBidpDSkt-I){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1WbEYQeEyyYUfgY9s8vSCUDBidpDSkt-I){: width="100%" height="100%"}{: .center}
     
 - Spec Aug 코드 구현
     
@@ -143,7 +143,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 > 
 - VGG Block 위치
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=12NQdsdkWS8mftRtUxkPscJ75eMCtZlqm){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=12NQdsdkWS8mftRtUxkPscJ75eMCtZlqm){: width="100%" height="100%"}{: .center}
     
 - VGG Block 코드 구현
     
@@ -182,7 +182,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 > 
 - Linear layer와 dropout 의 위치
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1mjLc0aK3EQEH9tz0NGyzUsPIB3WJT3t1){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1mjLc0aK3EQEH9tz0NGyzUsPIB3WJT3t1){: width="100%" height="100%"}{: .center}
     
 - Linear layer와 dropout 코드 구현
     
@@ -208,7 +208,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 > 
 - Conformer Block 위치
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1DhoQt9LCcfWclmrkA2lxRChcw4M8WFPg){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1DhoQt9LCcfWclmrkA2lxRChcw4M8WFPg){: width="100%" height="100%"}{: .center}
     
 - Conformer Block 코드 구현
     
@@ -497,7 +497,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 - input sentence가 input으로 들어오면 각 word들은 Lookup table에 있는 vector embedding으로 represented됨
 - 각 layer의 output은 linear projection에 sigmoid를 적용함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1NT2StBZwxETv3qfObwqk1v9HlFKX9yRS){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1NT2StBZwxETv3qfObwqk1v9HlFKX9yRS){: width="100%" height="100%"}{: .center}
     
 
 ## 2.4 N Conformer Block - 2
@@ -556,7 +556,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 > 
 - Transposed Conv, Softmax and CE Loss 위치
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1QGN2oIxspmjJ6RgGJHhBbdUEUPq_7JEk){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1QGN2oIxspmjJ6RgGJHhBbdUEUPq_7JEk){: width="100%" height="100%"}{: .center}
     
 - Transposed Conv, Softmax and CE Loss 코드 구현
     
@@ -598,7 +598,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 - 정말 나이브하게 생각하면 입력값이 [0.01,0.9,0.2] 이라고 했을때 해당 상태에서 그냥 softmax를 적용한다면**[0.2153, 0.5243, 0.2604]** 값이 나오지만 /4를 한채 softmax를 취하면 **[0.3032, 0.3788, 0.3180]**값이 나오는 것을 확인할 수 있음
     - 즉 한쪽에 값이 몰리는 것을 방지해줄 수 있고 학습이 잘 되도록 유도할 수 있음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1-7GSLqW9FeAkJXSi_cI8wAkEvJXMYKNS){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1-7GSLqW9FeAkJXSi_cI8wAkEvJXMYKNS){: width="100%" height="100%"}{: .center}
 
 
 <br/>
