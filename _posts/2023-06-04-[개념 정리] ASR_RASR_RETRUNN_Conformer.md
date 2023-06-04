@@ -1,7 +1,7 @@
 ---
 layout: post
-categories: 논문리뷰
-tags: timeseries
+categories: 개념정리
+tags: audio,ASR
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
