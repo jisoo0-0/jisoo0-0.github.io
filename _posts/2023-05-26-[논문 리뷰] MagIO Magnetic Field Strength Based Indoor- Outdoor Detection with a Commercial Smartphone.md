@@ -11,11 +11,10 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
 ##### 논문 및 사진 출처
 >Ashraf, Imran, Soojung Hur, and Yongwan Park. "MagIO: Magnetic field strength based indoor-outdoor detection with a commercial smartphone." Micromachines 9.10 (2018): 534.
     
-<aside>
-💡 Magnetic sensor을 기반으로 Indoor / Outdoor을 구분해 내는 연구를 발견해서 정리해보았음. 
+💡 Magnetic sensor을 기반으로 Indoor / Outdoor을 구분해 내는 연구를 발견해서 정리해보았음.     
 그런데 sensor data를 기반으로 한 연구들 대부분 수집된 데이터셋에 따라서 모델의 성능이 많이 달라지기 때문에 참고용으로만 읽어두면 좋을듯.
 <br/>
-</aside>
+
 # 0 Abstract
 
 - IO systems work with collaborative technologies including the Global Positioning System (GPS), cellular tower signals, Wi-Fi, Bluetooth and a variety of smartphone sensors.
