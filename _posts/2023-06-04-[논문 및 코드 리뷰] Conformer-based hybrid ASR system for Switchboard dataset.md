@@ -486,7 +486,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
     [-2,-1,0]] 가 position encoding 으로 들어감 
     
 
-### 부록) GLU (****Gated Linear Unit)****
+### 부록) GLU (Gated Linear Unit)
 
 > Dauphin, Yann N., et al. "Language modeling with gated convolutional networks." *International conference on machine learning*. PMLR, 2017.
 > 
