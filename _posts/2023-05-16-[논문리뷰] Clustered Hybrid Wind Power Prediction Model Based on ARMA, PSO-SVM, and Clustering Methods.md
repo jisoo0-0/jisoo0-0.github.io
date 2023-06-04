@@ -8,7 +8,7 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 ---
 
 
-##### 논문 및 사진 출처
+**논문 및 사진 출처**
 >Wang, Yurong, Dongchuan Wang, and Yi Tang. "Clustered hybrid wind power prediction model based on ARMA, PSO-SVM, and clustering methods." IEEE Access 8 (2020): 17071-17079.
 
 <aside>

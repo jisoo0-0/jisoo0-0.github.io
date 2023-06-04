@@ -8,7 +8,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 ---
 
 
-##### 논문 및 사진 출처
+**논문 및 사진 출처**
 >Lin, Yang, Irena Koprinska, and Mashud Rana. "Temporal convolutional attention neural networks for time series forecasting." 2021 International joint conference on neural networks (IJCNN). IEEE, 2021.
 
 
