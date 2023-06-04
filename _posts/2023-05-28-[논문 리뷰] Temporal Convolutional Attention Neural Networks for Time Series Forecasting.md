@@ -12,10 +12,6 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 >Lin, Yang, Irena Koprinska, and Mashud Rana. "Temporal convolutional attention neural networks for time series forecasting." 2021 International joint conference on neural networks (IJCNN). IEEE, 2021.
 
 
-<aside>
-💡 태양열 관련 예측 모델 제안 연구
-
-</aside>
 # Abstract
 
 - Temporal Convolutional Neural Networks(TCNNs)은 time series forecasting을 포함한 여러가지 sequence modelling task에 적용되어 왔음.

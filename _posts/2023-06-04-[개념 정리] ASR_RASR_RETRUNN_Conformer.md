@@ -7,9 +7,9 @@ disqus: 'https-jisoo0-0-github-io'
 title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 ---
 
-#0 ASR System
+# 0 ASR System
 
-##0.1 ASR System이란?
+## 0.1 ASR System이란?
 
 - **ASR(Automatic Speech Recognition) system이란?**
     - 음성 인식 시스템은 여러 구조가 있을 수 있지만, 고전적인 구조는 크게 4가지 모듈로 구성됨
