@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
   <head>
     {% include head.html %}
+    <style> 
+      ::-webkit-scrollbar{width: 16px;}
+      ::-webkit-scrollbar-track {background-color:#e9f3ff; border-radius: 1px; width:20px}
+      ::-webkit-scrollbar-thumb {background-color:#cae3fc; border-radius: 1px; }
+      ::-webkit-scrollbar-thumb:hover {background: #6a97d3;}
+      
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      {width:1px;height:1px;background:transparent; }
+      
+      
+    </style>
   </head>
 
   <body>

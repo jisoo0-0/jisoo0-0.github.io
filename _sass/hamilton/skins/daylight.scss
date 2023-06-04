@@ -34,16 +34,16 @@ $subscribe-color:       #b21000 !default;
   font-weight: bold;
 }
 .highlight .c1 {
-  color: #999988;
+  color: #4c37c3;
   font-style: italic;
 }
 .highlight .cs {
-  color: #999999;
+  color: #999999f5;
   font-weight: bold;
   font-style: italic;
 }
 .highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
-  color: #999988;
+  color: #998888;
   font-style: italic;
 }
 .highlight .err {
@@ -163,13 +163,13 @@ $subscribe-color:       #b21000 !default;
   color: #990073;
 }
 .highlight .s, .highlight .sa, .highlight .dl {
-  color: #d14;
+  color: rgb(0, 17, 80);
 }
 .highlight .na {
   color: #008080;
 }
 .highlight .bp {
-  color: #999999;
+  color: #1100ff;
 }
 .highlight .nb {
   color: #0086B3;
@@ -201,7 +201,7 @@ $subscribe-color:       #b21000 !default;
   font-weight: bold;
 }
 .highlight .nn {
-  color: #555555;
+  color: #000598;
 }
 .highlight .nt {
   color: #000080;

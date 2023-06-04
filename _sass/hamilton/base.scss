@@ -1,9 +1,11 @@
 html {
   font-size: $base-font-size;
+  
 
   @include media-query($on-small) {
     @include relative-font-size(0.89);
   }
+  
 }
 
 /**
@@ -12,6 +14,7 @@ html {
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
+  
   margin: 0;
   padding: 0;
 }
@@ -30,8 +33,9 @@ ul, ol, dl, figure, iframe,
  * Basic styling
  */
 body {
+  
   font-family: $base-font-family;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 90%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
@@ -42,12 +46,14 @@ body {
   flex-direction: column;
   overflow-wrap: break-word;
   line-height: $base-line-height;
+  
 }
 
 p {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+          
 }
 
 hr {
@@ -132,14 +138,14 @@ code {
 
 pre {
   padding: 8px 12px;
-  overflow-x: auto;
+  overflow-x: hidden;
 
   > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
 
-    white-space: pre;
+    white-space: pre-wrap;
     word-break: normal;
     word-wrap: normal;
   }
