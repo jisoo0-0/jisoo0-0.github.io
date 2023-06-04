@@ -104,10 +104,9 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ## 2.1 SpecAug
 
 > SpecAugment [24] is a data augmentation method that **masks out blocks of frequency channels and blocks of time steps**.
-> 
+
 - Spec Aug 위치
-    
-    ![Untitled](http://drive.google.com/uc?export=view&id=1WbEYQeEyyYUfgY9s8vSCUDBidpDSkt-I){: width="100%" height="100%"}{: .center}
+![Untitled](http://drive.google.com/uc?export=view&id=1WbEYQeEyyYUfgY9s8vSCUDBidpDSkt-I){: width="100%" height="100%"}{: .center}
     
 - Spec Aug 코드 구현
     
@@ -140,7 +139,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ## 2.2 VGG Block
 
 > For NN training, we use 40-dimensional Gammatone features [28]. The first block of the NN consists of a VGG network similar to [19]. We use **4 convolution layers each having 3×3 kernel size**. The number of output filters for each layer are 32, 64, 64, 32 respectively. **We apply Swish activation** [29] between all convolution layers which we observe to be better than using ReLU [30]. Moreover, we apply **max-pooling layer over feature dimension between first and second convolution layers**. The last convolution layer is a **strided convolution used for time downsampling by factor of 3**. This is followed by 12 conformer blocks. For time upsampling, a transposed convolution is used. The attention dimension of each MHSA module is 512 with 8 attention heads. The dimension of the feed-forward module is 2048. We also use relative positional encoding. The output labels consists of state-tied triphones using CART [31]
-> 
+
 - VGG Block 위치
     
     ![Untitled](http://drive.google.com/uc?export=view&id=12NQdsdkWS8mftRtUxkPscJ75eMCtZlqm){: width="100%" height="100%"}{: .center}
@@ -179,7 +178,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ## 2.3 Linear and Dropout
 
 > These layers consist of a transposed convolution for upsampling followed by an MLP of one **linear projection layer** **with dimension 512 × 512**. …. We apply **dropout of 10%** for all conformer modules as well as embedding and attention dropout.
-> 
+
 - Linear layer와 dropout 의 위치
     
     ![Untitled](http://drive.google.com/uc?export=view&id=1mjLc0aK3EQEH9tz0NGyzUsPIB3WJT3t1){: width="100%" height="100%"}{: .center}
@@ -205,7 +204,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ## 2.3 N Conformer Block - 1
 
 > The standard conformer architecture [10] consists mainly of four modules: **feed-forward module (FFN)**, multi-head self-attention module **(MHSA)**, convolution module (**Conv**), and **another feed-forward module**. ConformerBlocki = **LayerNorm(xF F N2 ) …** The attention dimension of each MHSA module is 512 with 8 attention heads. The dimension of the feed-forward module is 2048.
-> 
+
 - Conformer Block 위치
     
     ![Untitled](http://drive.google.com/uc?export=view&id=1DhoQt9LCcfWclmrkA2lxRChcw4M8WFPg){: width="100%" height="100%"}{: .center}
@@ -553,7 +552,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ## 2.5 Transposed Conv, Softmax and CE Loss
 
 > … we use transposed convolution [18] inspired from computer vision in order to upsample again to the **frame-wise target alignment length**. For consistency, the **filter size and the stride of the transposed convolution are set to the time reduction factor**.We apply **weight decay** [35] with a value of **0.01** to the transposed convolution layers. To avoid overfitting, we use **focal loss** [23] with a **factor of 2**. At the **final output layer**, we use **CE loss** **smoothing** with a factor of **0.1**.
-> 
+ 
 - Transposed Conv, Softmax and CE Loss 위치
     
     ![Untitled](http://drive.google.com/uc?export=view&id=1QGN2oIxspmjJ6RgGJHhBbdUEUPq_7JEk){: width="100%" height="100%"}{: .center}
