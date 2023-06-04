@@ -8,8 +8,7 @@ title: "[논문리뷰] Deep learning for spatio-temporal data mining: A survey"
 ---
 
 
-#### 관련 프로젝트
-Covid GCN    
+
 ##### 논문 및 사진 출처
 >Wang, Senzhang, Jiannong Cao, and Philip Yu. "Deep learning for spatio-temporal data mining: A survey." IEEE transactions on knowledge and data engineering (2020).    
 
