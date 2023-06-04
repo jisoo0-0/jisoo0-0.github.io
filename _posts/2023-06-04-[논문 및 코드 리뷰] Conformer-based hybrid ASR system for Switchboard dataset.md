@@ -4,7 +4,7 @@ categories: 논문리뷰, 코드리뷰
 tags: audio, ASR
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
-title: "[논문 및 코드 리뷰] ASR System / RASR / RETURNN / Comformer"
+title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchboard dataset"
 ---
 
 # 1 논문 리뷰
@@ -12,7 +12,7 @@ title: "[논문 및 코드 리뷰] ASR System / RASR / RETURNN / Comformer"
 > Zeineldeen, Mohammad, et al. "Conformer-based hybrid ASR system for Switchboard dataset." *ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)*. IEEE, 2022.
 > 
 
-## 1.1 논문 내용 리뷰
+## 1.1 논문 내용
 
 ### 1.1.0 Abstract
 
@@ -597,7 +597,8 @@ title: "[논문 및 코드 리뷰] ASR System / RASR / RETURNN / Comformer"
 - Smoothing을 하는 이유는 각 출력값을 비슷한 분포로 맞춰주기 위해서임
 - 정말 나이브하게 생각하면 입력값이 [0.01,0.9,0.2] 이라고 했을때 해당 상태에서 그냥 softmax를 적용한다면**[0.2153, 0.5243, 0.2604]** 값이 나오지만 /4를 한채 softmax를 취하면 **[0.3032, 0.3788, 0.3180]**값이 나오는 것을 확인할 수 있음
     - 즉 한쪽에 값이 몰리는 것을 방지해줄 수 있고 학습이 잘 되도록 유도할 수 있음
-
+    
+    ![Untitled](http://drive.google.com/uc?export=view&id=1-7GSLqW9FeAkJXSi_cI8wAkEvJXMYKNS){: width="80%" height="80%"}{: .center}
 
 
 <br/>
