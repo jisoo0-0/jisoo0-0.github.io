@@ -6,14 +6,6 @@ comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 ---
-###목차<br/>
-[0 ASR System](#0-asr-system)<br/>
-[0.1 ASR System이란?](##0.1-asr-system이란?)<br/>
-[1 RASR / RETURNN / Comformer](#1rasr-/-returnn-/-comformer)<br/>
-[1.1 RASR](##1.1-rasr)<br/>
-[1.2 RETURNN](##1.2-returnn)<br/>
-[1.3 Comformer](#1.3-comformer)<br/>
-
 
 #0 ASR System
 
@@ -43,9 +35,9 @@ title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
         음향모델 종류 및 DNN에서 사용되는 여러 Model의 예시
         
 
-#1 RASR / RETURNN / Comformer
+# 1 RASR / RETURNN / Comformer
 
-##1.1 RASR
+## 1.1 RASR
 
 - 해당 모델은 본 연구에서 사용된 모델이기에 간단한 리뷰를 진행함
 
@@ -136,7 +128,7 @@ title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 - 위의 방법들은 basic한 operation과 같이 사용되어 data processing network을 형성할 수 있음
     - lattice pruning, file operation, format conversation
 
-##1.2 RETURNN
+## 1.2 RETURNN
 
 - 해당 모델은 본 연구에서 사용된 모델이기에 간단한 리뷰를 진행함
 
@@ -169,7 +161,7 @@ title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 - RETRURNN은 fully functional training software을 제공함
     - user interaction과 multi batch trainer 그리고 이후 processing을 위한 network activation을 추출할 수 있는 확률값을 제공
 
-##1.3 Comformer
+## 1.3 Comformer
 
 - 해당 모델은 본 연구에서 사용된 모델이기에 간단한 리뷰를 진행함
 
