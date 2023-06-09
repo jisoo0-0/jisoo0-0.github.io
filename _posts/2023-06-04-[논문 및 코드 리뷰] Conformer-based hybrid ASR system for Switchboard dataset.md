@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 논문리뷰, 코드리뷰
+categories: 논문리뷰 코드리뷰
 tags: audio, ASR
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
@@ -488,7 +488,7 @@ title: "[논문 및 코드 리뷰] Conformer-based hybrid ASR system for Switchb
 ### 부록) GLU (Gated Linear Unit)
 
 > Dauphin, Yann N., et al. "Language modeling with gated convolutional networks." *International conference on machine learning*. PMLR, 2017.
-> 
+
 - LSTM으로 유사한 gate임
     - LSTM과는 다르게 forget gate가 따로 없음.
 - 언어 모델을 위한 모델이었기 때문에 미래 단어 정보를 zeropedding시켜줘야함.
