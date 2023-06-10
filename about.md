@@ -18,7 +18,7 @@ March, 2019 - February, 2023
 	- GPA: **4.24/4.5**
 
 **Korea University**, (MS/Ph.D)
-September, 2022 – **Current**   
+March, 2023 – **Current**   
 *School of Industrial and Management Engineering*      
 
 
@@ -80,7 +80,7 @@ February, 2022 – June, 2022
 
 **Language**    
 	- Korean(native)    
-	- English(intermediate, tofel 91)
+	- English(intermediate, tofel 96)
 
 
 
