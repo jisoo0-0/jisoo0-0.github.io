@@ -4,7 +4,7 @@ categories: 논문리뷰
 tags: audio, ASR
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
-title: "[논문리뷰] Squeezeformer: An efficient transformer for automatic speech recognition."
+title: "[논문리뷰] Contrastive Siamese Network for Semi-Supervised Speech Recognition"
 ---
 
 출처
