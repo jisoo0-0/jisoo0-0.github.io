@@ -99,7 +99,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 모델의 전반적인 구조는 아래 figure 과 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1OptB64qfazhQFC4Q2-XoLr8ULiqoSpKF){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1OptB64qfazhQFC4Q2-XoLr8ULiqoSpKF){: width="90%" height="90%"}{: .center}
     
     - 베이스라인을 Multi speech으로 설정하고, repference encoder[11] 을 통해서 emotion과 관련된 정보를 추출하고자 했음
     - 해당 모델들과 본 연구에서 제안한 모델들의 차이는 multi style generation 부분의 auxiliary 모듈 부분임
@@ -151,7 +151,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 아래 그림은 multi style encoder에 관한 전반적인 구조를 나타냄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1F1GVSyZv9YFLkaJl7bKTsLyRTw3q2Fqc){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1F1GVSyZv9YFLkaJl7bKTsLyRTw3q2Fqc){: width="50%" height="50%"}{: .center}
     
     - baseline 구조는 F0 predictor과 동일하지만 stack되지 않았다는 점과 last layer에 softsign function이 포함되지 않았다는 점이 다름
         - softsing function은 output embedding의 dynamic range을 restrict 해줌

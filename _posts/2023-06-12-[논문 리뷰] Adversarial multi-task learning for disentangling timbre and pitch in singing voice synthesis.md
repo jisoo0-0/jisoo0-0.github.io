@@ -65,7 +65,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - Architecture overview
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1uZ9hmGuB6n0rdSB0jC8H71fxilF3aP4f){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1uZ9hmGuB6n0rdSB0jC8H71fxilF3aP4f){: width="90%" height="90%"}{: .center}
     
     - Fig1- a) single task SVS model / Fig1 -b) multi task SVS model
     - a, b 모두 두개의 encoder과 두개의 decoder 그리고 mel predictor을 포함하고 잇음
@@ -108,7 +108,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - trianing에서는 groundtruth인 V/UV flag이 voiced section의 logF0을 훈련시키는 데에 사용되었음
         - 따라서 loss pitch에대한 loss 값은 아래와 같이 계산됨
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=15pbH7sm53Uda9KRjeSEKuATd7L2Y5AeC){: width="80%" height="80%"}{: .center}
+            ![Untitled](http://drive.google.com/uc?export=view&id=15pbH7sm53Uda9KRjeSEKuATd7L2Y5AeC){: width="60%" height="60%"}{: .center}
             
             - 동그라미 기호는 element wise multiplication
             - p : target log F0
@@ -119,7 +119,7 @@ Copyright of figures and other materials in the paper belongs to original author
             
         - auxiliary feature에 대한 loss값은 아래와 같이 계산됨
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1cO8E2pIp9pfLwnzcAJlp6qvBRCcSEBJU){: width="80%" height="80%"}{: .center}
+            ![Untitled](http://drive.google.com/uc?export=view&id=1cO8E2pIp9pfLwnzcAJlp6qvBRCcSEBJU){: width="60%" height="60%"}{: .center}
             
             - Lmgc : MGC의 Loss
             - Lbap : BAP의 Loss
@@ -147,7 +147,7 @@ Copyright of figures and other materials in the paper belongs to original author
     - source filter modeling이 mel spectrogram 영역에 적용되기 때문에 mel predictor의 posnet은 실제 mel spectorgram M과 가까운 예측 coarse mel spectrogram을 생성하게 됨
     - 본 연구에서 사용된 mel spectrogram의 loss는 아래와 같음
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1uVpxBtPYC_PUwXJyyW6fpxWvn5cROHus){: width="80%" height="80%"}{: .center}
+        ![Untitled](http://drive.google.com/uc?export=view&id=1uVpxBtPYC_PUwXJyyW6fpxWvn5cROHus){: width="60%" height="60%"}{: .center}
         
         - MT : timbre representation과 관련있는 representation 값
         - MP : pitch representation과 관련있는 representation값
@@ -159,7 +159,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - singing voice의 perceptual quality를 향상시키기 위해서 conditional GAN framework을 제안했음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1_9EUK3H0Sh_PE9KN647vgNEHjrd6_UNF){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1_9EUK3H0Sh_PE9KN647vgNEHjrd6_UNF){: width="60%" height="60%"}{: .center}
     
     - 선행연구 [26] 에서는 GAN framework을 mel spectrogram의 성능을 향상시키기 위해서 사용했지만, 본 연구에서는 mel spectrogram, MGC, logF0에 대한 세가지의 discriminator을 사용했음
         - 이를 통해서 timbre와 pitch representation을 구별하고자 햇음

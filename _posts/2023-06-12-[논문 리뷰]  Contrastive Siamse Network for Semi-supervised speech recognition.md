@@ -61,7 +61,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 본 연구는 SimCLR, BYOL, MoCo, SimSiam 방법론과 관련이 높음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1DULzrSagANBgXmP-37UgRgFcoj035c6M){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1DULzrSagANBgXmP-37UgRgFcoj035c6M){: width="100%" height="100%"}{: .center}
     
     - 위의 architecture 들은 모두 다  2개의 branch으로부터 생성된 각각의 high level representation을 matching하고자 함
     - BYOL은 similirity loss에 기반한데 이는 **momemtum encoder을 사용**하기 때문에 collapse되지 않음
@@ -193,9 +193,9 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 실험 결과
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1mjRdvMdoj-tKRcvs-EopsGaAOQjtkANb){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1mjRdvMdoj-tKRcvs-EopsGaAOQjtkANb){: width="60%" height="60%"}{: .center}
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1xXavIC2Fo_ExvG_Qo_LcyB1sCKIA5sA1){: width="80%" height="80%"}{: .center}
+    ![Untitled](http://drive.google.com/uc?export=view&id=1xXavIC2Fo_ExvG_Qo_LcyB1sCKIA5sA1){: width="60%" height="60%"}{: .center}
     
     - 실험 결과 model size는 proposed model이 작은데 거의 동일한 WER을 도출해 냄
 
