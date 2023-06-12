@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 논문리뷰
-tags: audio, ASR
+tags: audio, voice_conversion, zero_shot
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[논문리뷰] Robust disentangled variational speech representation learning for zero-shot voice conversion"
