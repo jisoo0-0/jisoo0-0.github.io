@@ -130,7 +130,80 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
 <br/>
 <br/>
 
-7. 부록) ..이것들 처리하는데에 마주한 main 오류들ㅎ/..하..ㅋㅋ..ㅋ..
+7. 다 된줄 알았는데 아래 오류가 발생해서 .. 해결해줌 그냥 torch-scatter, torch_geometirc ..등등이 충돌해서 발생하는 오류라서 아래 pip list 공유해놓음
+<br/>
+- ImportError: cannot import name 'f1_score' from 'torch_geometric.utils' 
+- cannot import name 'container_abcs' from 'torch._six'
+- RuntimeError: scatter_add() expected at most 5 argument(s) but received 6 argument(s). Declaration: scatter_add(Tensor src, Tensor index, int dim=-1, Tensor? out=None, int? dim_size=None) -> Tensor
+- cannot import name 'segment_csr' from 'torch_scatter'
+
+    ```
+        Package               Version
+    --------------------- ---------
+    brotlipy              0.7.0
+    certifi               2023.5.7
+    cffi                  1.15.1
+    charset-normalizer    2.0.4
+    cryptography          39.0.1
+    googledrivedownloader 0.4
+    h5py                  3.8.0
+    idna                  3.4
+    imageio               2.31.1
+    importlib-metadata    4.13.0
+    isodate               0.6.1
+    Jinja2                3.1.2
+    joblib                1.2.0
+    llvmlite              0.39.1
+    MarkupSafe            2.1.3
+    mkl-fft               1.3.1
+    mkl-random            1.2.2
+    mkl-service           2.4.0
+    networkx              2.6.3
+    numba                 0.56.4
+    numpy                 1.21.5
+    packaging             23.1
+    pandas                1.3.5
+    Pillow                9.4.0
+    pip                   22.3.1
+    plyfile               0.9
+    psutil                5.9.5
+    pycparser             2.21
+    pyOpenSSL             23.0.0
+    pyparsing             3.1.0
+    PySocks               1.7.1
+    python-dateutil       2.8.2
+    pytz                  2023.3
+    PyWavelets            1.3.0
+    PyYAML                6.0
+    rdflib                6.3.2
+    requests              2.28.1
+    scikit-image          0.19.3
+    scikit-learn          1.0.2
+    scipy                 1.7.3
+    setuptools            65.6.3
+    six                   1.16.0
+    threadpoolctl         3.1.0
+    tifffile              2021.11.2
+    timm                  0.4.12
+    torch                 1.13.0
+    torch-cluster         1.6.1
+    torch-geometric       2.0.3
+    torch-scatter         2.0.2
+    torch-sparse          0.6.17
+    torch-spline-conv     1.2.2
+    torchaudio            0.13.0
+    torchmetrics          0.11.4
+    torchvision           0.14.0
+    tqdm                  4.65.0
+    typing_extensions     4.3.0
+    urllib3               1.26.14
+    wheel                 0.38.4
+    yacs                  0.1.8
+    zipp                  3.15.0
+
+    ```
+
+8. 부록) ..이것들 처리하는데에 마주한 main 오류들ㅎ/..하..ㅋㅋ..ㅋ..
 
     - ImportError: cannot import name 'container_abcs' from 'torch._six’
     - ImportError: cannot import name 'f1_score' from 'torch_geometric.utils’
