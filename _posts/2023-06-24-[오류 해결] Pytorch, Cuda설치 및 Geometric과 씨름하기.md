@@ -10,9 +10,7 @@ title: "[오류해결] Pytorch, Cuda설치 및 Geometric과 씨름하기"
 기본 설정은 nvidia drivers는 설치된 상태로 간주함. 
 Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
 (참고)geometric 배포자들은 local환경보다 가상환경을 추천하고 있음.
-
-==귀찮은 사람들은 그냥 python=3.7.16 , cuda 11.7으로 세팅해놓고 아래 배포해놓은 requirements.txt 실행 ㄱ==
-
+<span style="color:yellow">귀찮은 사람들은 그냥 python=3.7.16 , cuda 11.7으로 세팅해놓고 아래 배포해놓은 requirements.txt 실행 ㄱ</span>
 1. docker hub에 공개되어 있는 cuda11.7, ubuntu 20.04인  이미지를 다운받음
 
     ```python
@@ -130,9 +128,8 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
 <br/>
 <br/>
 
-7. 다 된줄 알았는데 아래 오류가 발생해서 .. 해결해줌 그냥 torch-scatter, torch_geometirc ..등등이 충돌해서 발생하는 오류라.. 아래 링크에 ==pip list 공유해놓음== 원하는 환경에 저 파일 다운로드 받아서 위치시키고, 터미널에서 "pip install -r requirements.txt" 작성하면 됨. 
-다운로드 링크 : https://drive.google.com/file/d/11ES5rFbeGv5QJyCWG1F_XKfcgoiTIRX2/view?usp=sharing 
-
+7. 다 된줄 알았는데 아래 오류가 발생해서 .. 해결해줌 그냥 torch-scatter, torch_geometirc ..등등이 충돌해서 발생하는 오류라.. 아래 링크에 <span style="color:yellow">pip list 공유해놓음</span>   원하는 환경에 저 파일 다운로드 받아서 위치시키고, 세팅된 가상환경의 터미널에서 "pip install -r requirements.txt" 작성하면 됨. 
+[다운로드 링크](https://drive.google.com/file/d/1RIu_r41IKiIeiblYlPte_dgHkCnhl6ww/view?usp=sharing)
 <br/>
 
 - ImportError: cannot import name 'f1_score' from 'torch_geometric.utils' 
