@@ -11,7 +11,7 @@ title: "[오류해결] Pytorch, Cuda설치 및 Geometric과 씨름하기"
 Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
 (참고)geometric 배포자들은 local환경보다 가상환경을 추천하고 있음.
 
-==귀찮은 사람들은 그냥 python=3.7||3.8 , cuda 11.7으로 세팅해놓고 아래 배포해놓은 requirements.txt 실행 ㄱ==
+==귀찮은 사람들은 그냥 python=3.7.16 , cuda 11.7으로 세팅해놓고 아래 배포해놓은 requirements.txt 실행 ㄱ==
 
 1. docker hub에 공개되어 있는 cuda11.7, ubuntu 20.04인  이미지를 다운받음
 
