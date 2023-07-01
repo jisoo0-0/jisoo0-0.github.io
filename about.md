@@ -17,10 +17,11 @@ March, 2019 - February, 2023
 *School of Software Convergence*   
 	- GPA: **4.24/4.5**
 
-**Korea University**, (MS/Ph.D)
-March, 2023 – **Current**   
+**Korea University**, (MS/Ph.D) , *Adviser : Sung Won Han*    
+March, 2023 – **Current**      
 *School of Industrial and Management Engineering*      
-
+Aritificial Intelligence And Data Analytics Lab, http://aida.korea.ac.kr/    
+ 
 
 
 # <center>Projects</center>
@@ -57,7 +58,7 @@ On-campus assignments
 **Seoul National University Hospital Interpreter Volunteering**    
 September, 2019 – December, 2019     
 
-**Ministryof Foreign Affairs Supporters**    
+**Ministry of Foreign Affairs Supporters**    
 December, 2019 – February, 2020      
 
 **LG Supporters(Think Earth)**    
