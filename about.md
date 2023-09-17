@@ -88,7 +88,7 @@ February, 2022 – June, 2022
 
 **Language**    
 	- Korean(native)    
-	- English(intermediate, tofel 96)
+	- English(intermediate, tofel 106)
 
 
 
