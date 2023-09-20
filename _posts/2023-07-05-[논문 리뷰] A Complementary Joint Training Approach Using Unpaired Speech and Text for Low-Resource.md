@@ -13,7 +13,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 용어 정리
     - **Pseudo labeled data**란?
-        - 모텔을 통하여 라벨이 없는 데이터에 라벨을 붙인 데이터
+        - 모델을 통하여 라벨이 없는 데이터에 라벨을 붙인 데이터
     - **synthesized audio text pair**이란?
         - 아마도 모델을 통해서 pair으로 짝지어진 audio text pair
 - first round, secound round
