@@ -99,7 +99,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 모델의 전반적인 구조는 아래 figure 과 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1OptB64qfazhQFC4Q2-XoLr8ULiqoSpKF){: width="90%" height="90%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/25f9a086-561c-4641-b296-e1efac815de3){: width="90%" height="90%"}{: .center}
     
     - 베이스라인을 Multi speech으로 설정하고, repference encoder[11] 을 통해서 emotion과 관련된 정보를 추출하고자 했음
     - 해당 모델들과 본 연구에서 제안한 모델들의 차이는 multi style generation 부분의 auxiliary 모듈 부분임
@@ -139,7 +139,7 @@ Copyright of figures and other materials in the paper belongs to original author
 - reference F0 값이 inference stage에서 사용될 수 없기 때문에 모델으로 하여금 해당 값을 예측하도록 해야함
 - 아래 그림은 F0 predictor의 구성을 나타냄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1V37cyWTrx18Xuf3cMgE77U4H-Ylj1iDC){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/4c31277b-41dd-4b04-b67f-a5e6811df7bb){: width="80%" height="80%"}{: .center}
     
     - 이 구성은 Fastspeech2 의 pitch predictor과 Adaspeech의 conditional layer normalization으로부터 영감을 받아서 제작되었음
     - input text related embedding으로부터 f0 값을 보다 정확하게 예측하기 위해서 figure과 같이 3개의 layer을 쌓아서 구성함
@@ -151,7 +151,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 아래 그림은 multi style encoder에 관한 전반적인 구조를 나타냄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1F1GVSyZv9YFLkaJl7bKTsLyRTw3q2Fqc){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0aff6823-022b-4bdc-9da2-2ece1f154a94){: width="50%" height="50%"}{: .center}
     
     - baseline 구조는 F0 predictor과 동일하지만 stack되지 않았다는 점과 last layer에 softsign function이 포함되지 않았다는 점이 다름
         - softsing function은 output embedding의 dynamic range을 restrict 해줌
@@ -173,7 +173,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 본 연구에서 사용된 최종적인 loss값은 아래 식과 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1JIuNH7XmHmMVkfl14wEzZ0Xm5tvrtUE4){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/dd9fa742-1d93-4fdb-b839-68b1b96773a3){: width="80%" height="80%"}{: .center}
     
     - LTTS : TTS training의 손실값
     - LIA : internal aligner module에 대한 손실값
@@ -182,7 +182,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - 이건 20k 이후에 F0 loss를 사용하는 것이 training process를 안정적이게 하기 때문임
 - LTTS는 아래와 같이 정의됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1eLYUd6uzA5Kj3E5_5FsJPAmxoKluKEZY){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5fdbb72b-2fc4-44f7-9300-e90325b7a1c6){: width="80%" height="80%"}{: .center}
     
     - LREC : mel spectrogram reconstruction에 대한L1 손실값
     - LBCE : stop token에 대한 binary cross entropy 손실값
@@ -190,7 +190,7 @@ Copyright of figures and other materials in the paper belongs to original author
     - Lemo : reference encoder에 대한 emotion 분류 손실값
 - internal aligner module을 학습하기 위해서 training process의 초기에 CTC loss를 적용하고, 10k step마다 KL divergence loss를 아래와 같이 포함시켜주었음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1zA9FSbpy1Qjma9RLQO9Gj_cS5P2TRQ8d){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/29e97583-7171-42cc-a191-245f45f65ea1){: width="80%" height="80%"}{: .center}
     
 
 # 5 Conclusion

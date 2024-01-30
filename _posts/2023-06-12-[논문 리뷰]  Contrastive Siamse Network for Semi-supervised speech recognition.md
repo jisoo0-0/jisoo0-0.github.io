@@ -61,7 +61,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 본 연구는 SimCLR, BYOL, MoCo, SimSiam 방법론과 관련이 높음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1DULzrSagANBgXmP-37UgRgFcoj035c6M){: width="100%" height="100%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3537651e-af2b-4979-b732-42218d31e6ab){: width="100%" height="100%"}{: .center}
     
     - 위의 architecture 들은 모두 다  2개의 branch으로부터 생성된 각각의 high level representation을 matching하고자 함
     - BYOL은 similirity loss에 기반한데 이는 **momemtum encoder을 사용**하기 때문에 collapse되지 않음
@@ -94,7 +94,7 @@ Copyright of figures and other materials in the paper belongs to original author
         1. 각 representation이 frame level phoneme을 recognize할 수 잇는지 봄
 - 실험 결과
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1MU4RwqHqFuznAO06s9i-VG_E7MbYQuea){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1c683f75-5ca9-4ecb-b2d0-2896f5cd59a9){: width="80%" height="80%"}{: .center}
     
 - Wav2Vec을 사용했을 때 위의 그림처럼 정확도가 layer 17에서 확 떨어지게 됨. 이는 wav2vec이 audio encoder의 input을 matching하려고 노력했지만 input의 phoneme을 predict하기 어려웠기 때문에 발생한 현상임.
 - 이러한 현상을 해결하기 위해서는 본 연구에서 **higher level representation을 siamese network을 통해서 매칭시켜주고자** 함
@@ -103,7 +103,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - **supervised part와** **unsupervised part**으로 나누어져 있으며 **해당 part들은 같은 audio encoder을 공유하고 같이 학습됨**
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1vFH0CGwFThEp3NQ9D7uGpwswthO2TFkE){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/c0860197-95e2-418d-9db0-d5535af2bccb){: width="80%" height="80%"}{: .center}
     
 
 ## 4.1 Supervised network
@@ -119,7 +119,7 @@ Copyright of figures and other materials in the paper belongs to original author
     3. **logit function→ RNNT의 forward / backward 알고리즘에서 사용됨**
         1. acoustic과 label embedding을 input으로 받아서 logit embedding을 생성함
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1bp7I7cobncryLZBHOz3ngNOEfWZO9FlG){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/01b4c70f-603b-4f79-8fe7-07a4b9e24693){: width="80%" height="80%"}{: .center}
             
             - a : acoustic
             - l : label
@@ -144,7 +144,7 @@ Copyright of figures and other materials in the paper belongs to original author
     - maksing은 단순하게 feature의 연속적인 region을 0으로 설정함으로서 적용함
     - contrastive loss는 softmax기반의 코사인 유사도를 기반으로 한 negative log-likelihood function으로 설정함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1Yc9v3JBj-HV9Bre3GRqlfpmLrvrJKZge){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/dfda0a5f-f057-4d5e-934e-37368e13c3ee){: width="80%" height="80%"}{: .center}
         
         - at는 augmented branch에서 생성된 output vector
         - qt`는 at에 매칭되는 positive target vector
@@ -176,13 +176,13 @@ Copyright of figures and other materials in the paper belongs to original author
                 3. boundary condition을 통해서 input을 모두 포함할 수 있도록 함
         - time warping function
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=16bvbNb0UnqYQwTSgKzis1AQJUTSO1bw2){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/429822f9-613b-4072-a1ae-5ff6c13cf4af){: width="80%" height="80%"}{: .center}
             
             - R은 warping function의 순서이고, ar는 r번째 sin 구성요소의 amplitude(진폭)을 나타냄
                 - 이러한 파라미터들은 smoothness랑 mononicity를 조절할 수 있음
             - time warping function을 생성한 이후에는 input feature에 이를 적용해야함. 본 연구에서는 linear interpolation 기술을 통해서 x(w(t))를 계산함
                 
-                ![Untitled](http://drive.google.com/uc?export=view&id=1bOb8XEIzpsiFk02olrhr1ALmseO8S9rT){: width="80%" height="80%"}{: .center}
+                ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1598e52c-9416-478f-8eda-83c562008f3e){: width="80%" height="80%"}{: .center}
                 
                 - ┌w┐와 └w┘는 w의 ceil 값
     
@@ -193,9 +193,9 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 실험 결과
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1mjRdvMdoj-tKRcvs-EopsGaAOQjtkANb){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/7b2cd288-231f-4855-a1c5-f53c33082ccd){: width="60%" height="60%"}{: .center}
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1xXavIC2Fo_ExvG_Qo_LcyB1sCKIA5sA1){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d2dcf5f6-d18c-4c07-a83c-348977ee1dda){: width="60%" height="60%"}{: .center}
     
     - 실험 결과 model size는 proposed model이 작은데 거의 동일한 WER을 도출해 냄
 

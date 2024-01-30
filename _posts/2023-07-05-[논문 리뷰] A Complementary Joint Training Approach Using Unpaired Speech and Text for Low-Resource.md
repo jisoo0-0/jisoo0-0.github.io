@@ -18,7 +18,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - 아마도 모델을 통해서 pair으로 짝지어진 audio text pair
 - first round, secound round
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1EQLSxBh6cRDOQuc2kn_C2yiFovhZhVes){: width="40%" height="40%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/05166275-df91-43f0-ae70-0a287ba424f9){: width="40%" height="40%"}{: .center}
     
     - first round 에서는 model을 두개의 paired generated dataset을 통해서 학습시킴
     - second round 에서는 generated된 pseudo label들을 masking하고, gradient restriction을 synthsized speech data 에 적용하고, model을 re training시킴
@@ -68,44 +68,44 @@ Copyright of figures and other materials in the paper belongs to original author
 - 수식 정리
     - Dp 는 paired speech-text data
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1GKIKI0F9e2Yv922k5tblFZwapFpyUZnk){: width="30%" height="30%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/2c1e4599-4001-48cb-babc-5530a196ad93){: width="30%" height="30%"}{: .center}
         
     - 아래 식들은 각각 unpaired speech data, unpaired text data
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1oF9EqapZivLXa6FyOcyNO0iHOdV--Cxv){: width="20%" height="20%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ed6d11be-9d53-4246-b5f6-926eb47edc16){: width="20%" height="20%"}{: .center}
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1C-t-RJYumhtHJ8yfA7ewiE5lHnjuy1iZ){: width="20%" height="20%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/135a582c-d996-403c-a3ae-fa721cc1ebc9){: width="20%" height="20%"}{: .center}
         
     - audio x*을 TTS를 통해서 찾아냄, y는 text data sample x*은 그로부터 생성된 sample speech data
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1kd1ELKjAsf8v5mQagOsavjndp64Z-p6c){: width="20%" height="20%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/bff3dd3a-8460-4397-a717-eb1bbeb0f980){: width="20%" height="20%"}{: .center}
         
     - SynA-text pair은 아래와 같이 표기함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1V7KBDA-wMFUD_7r00Mh-4x9qMCH6XZay){: width="30%" height="30%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e8780e20-abe6-48ec-ab81-735410bcfb03){: width="30%" height="30%"}{: .center}
         
     - CJT model은 Dsu와 Dtu을 통해서 alternatively 하게 updated됨
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1SxD1e9pAOQzND1dWcZF9YOqH1_cBqKIh){: width="20%" height="20%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ca9a1661-cbec-4516-824a-2d39e1e21140){: width="20%" height="20%"}{: .center}
         
         - Ls : speech-PseL pair에 대한 loss
         - 람다Lt : SynA-text pari에 대한 loss
     - Ls, Lt구하는 식
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1EUzsw7pHgk1ER0J8zhEBFB-8tMW2k8XJ){: width="40%" height="40%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9c53fee0-e425-4ea0-b3b1-816fc249aad7){: width="40%" height="40%"}{: .center}
         
 
 ## 2.2 Analysis and two enhancement strategies
 
 - speech-PseL과 SynA-text pair들의 온전한 특성을 밝혀내기 위해서 잘 맞춘 그리고 잘못 맞춘 token을 아래 figure 2 와 같이 확인해 봄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1IIfnZmzlsPXI0QfBfHvTnxUjiNG0bYiq){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/216265d2-1124-4ce3-b696-bd3f9dd75559){: width="60%" height="60%"}{: .center}
     
     - fig2의 윗부분은 speech-PseLdata 에만 training한 것, 아랫부분은 speech-PseL과 SynAtext data에 jointly training한 것
     - 결과적으로 보면 윗부분에서는 correct / incorrect token이 비슷한 분포를 보이지만 아래 쪽은 incorrect token을 생성해 내는 비율이 완전히 내려감
 - 더 나아가서 PWCCA를 통해서 encoder layer의 representation의 similarity를 측정하고자 했음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1TTZ7MoSffdJX00FwWgMbEonYahjCV-aF){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/fbab7703-39e9-42d4-8c18-699c4ccaba5a){: width="60%" height="60%"}{: .center}
     
     M: 100h paired data 
     
@@ -138,12 +138,12 @@ Copyright of figures and other materials in the paper belongs to original author
         
 - pseudo label squence에 대해서 T가 target sequence의 길이임
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1qV8Ub81T9C7CFXnoqvSwGRjR9wB2oJTa){: width="20%" height="20%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ee81d242-149a-4f04-a766-72c34a60899f){: width="20%" height="20%"}{: .center}
     
     - 본 연구에서는 binary mask sequence을 생성해서 몇몇개의 token들을 들을 <PAD>으로 교체해줌
 - speech-PseL pairs 의 두번째 training 의 loss
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=14kdbTU_ajVF5Jx9vTCA56C0AlonOqCF8){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9aa666ce-019a-4606-8759-0af00eea71ca){: width="50%" height="50%"}{: .center}
     
     - masked target sequence 은 y~*으로 표기하고 mask index들의 집합을 M임
     - 첫번째 round prediction에서 예측된 확률값 p 를 기반으로 세개의 masking 기법이 고려됨

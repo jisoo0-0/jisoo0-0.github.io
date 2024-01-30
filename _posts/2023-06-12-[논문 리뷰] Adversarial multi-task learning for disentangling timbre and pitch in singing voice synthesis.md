@@ -65,7 +65,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - Architecture overview
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1uZ9hmGuB6n0rdSB0jC8H71fxilF3aP4f){: width="90%" height="90%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e630f476-4fb1-478b-8d47-c4fba8b2f8fd){: width="90%" height="90%"}{: .center}
     
     - Fig1- a) single task SVS model / Fig1 -b) multi task SVS model
     - a, b 모두 두개의 encoder과 두개의 decoder 그리고 mel predictor을 포함하고 잇음
@@ -108,7 +108,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - trianing에서는 groundtruth인 V/UV flag이 voiced section의 logF0을 훈련시키는 데에 사용되었음
         - 따라서 loss pitch에대한 loss 값은 아래와 같이 계산됨
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=15pbH7sm53Uda9KRjeSEKuATd7L2Y5AeC){: width="60%" height="60%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d392977e-073f-4f11-b5da-6365a320dfc6){: width="60%" height="60%"}{: .center}
             
             - 동그라미 기호는 element wise multiplication
             - p : target log F0
@@ -119,7 +119,7 @@ Copyright of figures and other materials in the paper belongs to original author
             
         - auxiliary feature에 대한 loss값은 아래와 같이 계산됨
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1cO8E2pIp9pfLwnzcAJlp6qvBRCcSEBJU){: width="60%" height="60%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9f4cb14f-163c-469b-a46f-5103e0ee3285){: width="60%" height="60%"}{: .center}
             
             - Lmgc : MGC의 Loss
             - Lbap : BAP의 Loss
@@ -131,7 +131,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 아래 그림의 c 파트에서 볼 수 있듯 timbre(Ht)와 pitch representation(Hp)은 log scale의 mel spectrogram을 예측하기 위해서 사용됨.
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1VUoYvBKtn9svZyMqaazYqETj-4YrRpav){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8cc8fd8b-2a83-4d1c-900e-a53c4a49bf55){: width="80%" height="80%"}{: .center}
     
     - 차원 축소를 위해서 Ht와 Hp는 각각 FC(Fully Connected) 레이어를 통과함
     - sigmoid를 마지막에 적용시켜주어서 output이 visible하고 interpretable 한 representation(Mt, Mp)이 되도록 함
@@ -147,7 +147,7 @@ Copyright of figures and other materials in the paper belongs to original author
     - source filter modeling이 mel spectrogram 영역에 적용되기 때문에 mel predictor의 posnet은 실제 mel spectorgram M과 가까운 예측 coarse mel spectrogram을 생성하게 됨
     - 본 연구에서 사용된 mel spectrogram의 loss는 아래와 같음
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1uVpxBtPYC_PUwXJyyW6fpxWvn5cROHus){: width="60%" height="60%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/11b6c172-fecf-449d-9e75-86e58b5debb9){: width="60%" height="60%"}{: .center}
         
         - MT : timbre representation과 관련있는 representation 값
         - MP : pitch representation과 관련있는 representation값
@@ -159,7 +159,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - singing voice의 perceptual quality를 향상시키기 위해서 conditional GAN framework을 제안했음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1_9EUK3H0Sh_PE9KN647vgNEHjrd6_UNF){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b64e46b6-ecec-4c94-b9aa-a5da2a6e76f8){: width="60%" height="60%"}{: .center}
     
     - 선행연구 [26] 에서는 GAN framework을 mel spectrogram의 성능을 향상시키기 위해서 사용했지만, 본 연구에서는 mel spectrogram, MGC, logF0에 대한 세가지의 discriminator을 사용했음
         - 이를 통해서 timbre와 pitch representation을 구별하고자 햇음
@@ -167,7 +167,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - 이러한 방식은 Ht와 Hp을 구별하지 못하게 entangled시키고 성능 저하를 야기함
     - 본 연구에서는 least squares loss function과 추가적인 feature matching loss를 adversarial training에서 사용함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1RSV_LtUvUguD8pgz1kWZeKx_HalrfCff){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8c54eab8-051e-4f2b-a25d-075d39a2af50){: width="80%" height="80%"}{: .center}
         
         - x → target feature
         - x^- > generated feature
@@ -176,7 +176,7 @@ Copyright of figures and other materials in the paper belongs to original author
         - L→각 discriminator에 포함되는 전체 layer의 개수
     - generator의 전체적인 loss function은 아래와 같음
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1mJcBagpdzwloeDPCGGahd3I6gdpauuON){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/31845d66-54cd-4ffe-b04d-6d34909d13dd){: width="80%" height="80%"}{: .center}
         
         - pre training에서는 Lmel을 제외하고 SF={t,p} 을 통해서 timbre와 pitch representation을 구분함
 
@@ -196,11 +196,11 @@ Copyright of figures and other materials in the paper belongs to original author
 - ㄴ의 b,c에서 확인할 수 있듯 spectral envelope과 pitch harmonic이 구분된것을 확인할 수 있음
     - ㄱ의 b,c에서 동그라미친 부분과 ㄴ의 b,c의 동그라미친 부분을 비교해보면 ㄴ이 훨씬 진동이 잘 보인다는 것을 통해서 해당 사실을 확인함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1C5df1HOfEePwRjjYOfjAu6mPnktS6fiV){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a1c1eab2-0784-4d4d-ba90-4350f766fa0f){: width="80%" height="80%"}{: .center}
         
 - 정량적 평가에서도 좋은 평가를 받아냄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1H9YnNpy--OaJVBlMYK2qd7DoTAi8mu-Q){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/11dda6cb-59b5-4373-9d6f-115933b6218d){: width="80%" height="80%"}{: .center}
     
 
 # 5 Conclusions

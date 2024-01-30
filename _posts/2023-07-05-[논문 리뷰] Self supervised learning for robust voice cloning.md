@@ -88,9 +88,9 @@ Copyright of figures and other materials in the paper belongs to original author
     - 추가적으로 online network은 추가적인 **prediction module q**가 있음
 - audio 의 두개의 augmented view 를 아래 식과 같이 생성함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1CxgArUf7M93vUvvxsallyoxZiC3sWXvQ){: width="20%" height="20%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1bdb44ca-b2fc-4314-a748-65754e887f20){: width="20%" height="20%"}{: .center}
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1kolHm3Acy94_8ysvEm95q2Jk_aIsm884){: width="20%" height="20%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e6243e06-1593-4af4-a936-e4cebc09b607){: width="20%" height="20%"}{: .center}
     
     - t, t` : audio augmentation,  audio augmentation  으로부터 샘플링된 것
 - online network은 representation과 projection을 출력함
@@ -98,16 +98,16 @@ Copyright of figures and other materials in the paper belongs to original author
 - target network은 두번째 augmented view를 사용해서 target projection을 출력함
 - 전체 loss식은 아래와 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1zCTskcIZjlYcDbW-csl1X4gL2aLOagLT){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a8ef30d2-4d6b-4b12-a5a7-b05c4a5dbfb3){: width="50%" height="50%"}{: .center}
     
     - 해석을 해보자면.. q가 online network의 추가적인 prediction module이고, z가 projection 정보이니까, target에 대한 projection 정보를 prediction module에 입력한 값과, target projection의 값간의 차이를 loss로 둔 것
 - augmentation의 측면에서도 loss가 동일하게 적용되기 위해서 u` augmentation이 online network에 , u는 target network에 fed되었음. 따라서 final loss는 아래와 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1qSc3A2vMnB4D8oWfJ5G5ePN5GLyNLhV6){: width="30%" height="30%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/7d048915-8a80-4c3e-9eaf-4d6290fd826f){: width="30%" height="30%"}{: .center}
     
 - target network의 파라미터는 online parmeter의 지수 가중 평균을 통해서 업데이트 됨 식은 아래와 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1XATjvCkO3Eg1s17EM8JeFDAaOrtFdb9Z){: width="30%" height="30%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a00c871c-c1b8-4758-a955-ae8b338dfb09){: width="30%" height="30%"}{: .center}
     
 
 ## 2.3 BYOL-A Augmentations
@@ -130,7 +130,7 @@ Copyright of figures and other materials in the paper belongs to original author
 - RRC는 log mel spectrogram에 random하게 crop한 sample을 포함함
 - frequence bin F와 time frame T가 주어졌을 때 아래와 같이 crop area 의 크기가 랜덤하게 샘플링 됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=19THiGO_JvNnv984QQl3PVM_YgsIqNP-d){: width="30%" height="30%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/957e785e-0698-4eba-aee4-75ab26813793){: width="45%" height="45%"}{: .center}
     
     - [바닥함수](https://ko.wikipedia.org/wiki/%EB%B0%94%EB%8B%A5_%ED%95%A8%EC%88%98%EC%99%80_%EC%B2%9C%EC%9E%A5_%ED%95%A8%EC%88%98), ⌈…⌉[천장함수](https://ko.wikipedia.org/wiki/%EB%B0%94%EB%8B%A5_%ED%95%A8%EC%88%98%EC%99%80_%EC%B2%9C%EC%9E%A5_%ED%95%A8%EC%88%98)
     - Fc : frequencey frame의 개수
@@ -167,7 +167,7 @@ Copyright of figures and other materials in the paper belongs to original author
 - synthesized audio가 동일한 speaker의 groundtruth audio와 얼마나 유사한지 측정함
 - 결과(낮으면 낮을수록 좋음)
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1vmaIdW9VcpUaB4R-t-2hj96-uAaRqJQ8){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0e7a7bac-aeb6-4f57-b118-be3622b8a81a){: width="60%" height="60%"}{: .center}
     
     - Method에는 음성 증강 방법이 적혀 있음
     - de vocetor pretrained with VCTK보다는 저자들이 제안한 모델의 성능이 더 좋음

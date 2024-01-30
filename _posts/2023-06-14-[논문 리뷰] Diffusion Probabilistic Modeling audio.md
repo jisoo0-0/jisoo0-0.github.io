@@ -77,7 +77,7 @@ Copyright of figures and other materials in the paper belongs to original author
 - 본 연구에서는 Stochastic Differential Equation(SDE)을 통해서 DPM을 적용함
 - forward X와 reverse X^의 diffusion process는 다음과 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1JE8uvPM36L2fd4Tv8vlOynX9Er57q0he){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a5e2587c-d09b-40a8-b598-29bbe4b0fa6d){: width="50%" height="50%"}{: .center}
     
     - 1번 식은 Forward SDE solver
     - 2번 식은 SDE-ML solver 즉 Decoder
@@ -87,22 +87,22 @@ Copyright of figures and other materials in the paper belongs to original author
     - W는 각각 전진, 역확산 표준 브라운의 운동 방향을 나타냄
 - target speaker의 identity를 캡쳐하기 위해서 speaker encoding network gt()를 **score matching network s세타**에 적용해서 두개의 network을 jointly하게 학습함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1l6p1K0WAH2db_-Ql_deLwBBpsHUqfgPU){: width="30%" height="30%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/fa459abc-0302-429f-b9ed-1cdeca3d6ca0){: width="30%" height="30%"}{: .center}
     
     - score maching loss는 decoder을 통해서 만들어진 mel spectrogram과 text encoder이나 mel encoder을 통해서 만들어진 spectrogram의 값 차이에 관한 loss임
     - Y는 target speaker 에 대해서 계산된 reference mel spectrogram의 전체 궤적을 타나내며 이는 forward diffusion을 통해서 계산됨(1번식)
 - decoder은 log likelihood의 data에 weighted variational lower bound 를 최대화 할 수 있도록 학습됨. score matching loss는 아래 식과 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1EMuZh_bh_fv5Bbw0ZkNcupiXAEJ8boHY){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8376b4a1-825e-41eb-86fa-409040797727){: width="50%" height="50%"}{: .center}
     
     - 해당 손실은 모델과 실제 데이터의 score을 일치시키고자 함.
     - 이를 통해서 모델은 실제 데이터의 특성과 분포를 보다 잘 모방할 수 있도록 학습됨
     - Xt는 다음 방정식을 통해서 획득됨
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1DhO1QIU3duJ18XMcRlf_d256kNrVbhND){: width="50%" height="50%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0033c55a-1ca6-4799-a642-1f7025d60d54){: width="50%" height="50%"}{: .center}
         
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=18bHXJxbLlvJf7N29NMJT5tDzZshVR8J9){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/dbbf60da-5721-45ca-b419-2003f312f598){: width="80%" height="80%"}{: .center}
     
 - decoder은 UNet 기반의 score matching network s세타를 포함하고 있음
     - decoder은 3*3Conv으로 mel spectrogram을 2D image으로 processing함
@@ -145,7 +145,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 결과표
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1UXUWyMlb8xrH4dQtkB3aV7UqDVunzNvb){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/2b94af36-3b8b-47f1-9c14-6510bcdaae8e){: width="60%" height="60%"}{: .center}
     
     - table 1은 voice cloning과 voice conversion을 선행연구 13 모델과 비교
     - table 2는 voice cloning을 선행연구 14와 비교
@@ -154,9 +154,9 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 결과표
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1j2UbBKsOhZGTjtzT57p8WMfVf24_BRJl){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/fbf548a0-9353-43f1-824e-6b37881c8b76){: width="60%" height="60%"}{: .center}
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1f9LDrEo-q3CCOyS_b7Rg4RqCP3DGRX4u){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/30dd4f22-be72-44db-aa28-32105fbfbe0c){: width="60%" height="60%"}{: .center}
     
     - table 3,4 를 통해서 single task에서 time 관점에서 더 좋은 결과를 보임을 확인 가능함
     - table 5에서 제안된 모델이 domain shift에 좀 더 robust해서 realistic 한 condition에 좀더 stable한 것을 확인 가능함
@@ -165,7 +165,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 결과표
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1_yNEHqG94h_scLWAWT6i8W3hF-3TB5_w){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a1b69a8c-dc01-4c33-beff-87c9a8cd976f){: width="60%" height="60%"}{: .center}
     
     - adaptation data의 영향이 speech 합성의 quality에 어떤 영향을 주는지 확인
     - 제안된 모델은 15초동안 adaptation 과정을 거친 것만으로도 좋은 성능을 보임을 확인

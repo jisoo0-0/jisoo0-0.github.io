@@ -64,7 +64,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - Conformer vs Squeezeformer
     
-    ![Figure 2: (Left) The Conformer architecutre and (Right) the Squeezeformer architecture which comprises of the Temporal U-Net structure for downsampling and upsampling of the sampling rate, the standard Transformer-style block structure that only uses Post-Layer Normalization, and the depthwise separable subsampling layer.](http://drive.google.com/uc?export=view&id=1JsKdH3OkrJYTFag4-kBpK1yZmM7Fil6j){: width="80%" height="80%"}{: .center}
+    ![Figure 2: (Left) The Conformer architecutre and (Right) the Squeezeformer architecture which comprises of the Temporal U-Net structure for downsampling and upsampling of the sampling rate, the standard Transformer-style block structure that only uses Post-Layer Normalization, and the depthwise separable subsampling layer.](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/860b7afd-5a85-4b08-a8ae-147fd82d1a90){: width="80%" height="80%"}{: .center}
     
     Figure 2: (Left) The Conformer architecutre and (Right) the Squeezeformer architecture which comprises of the Temporal U-Net structure for downsampling and upsampling of the sampling rate, the standard Transformer-style block structure that only uses Post-Layer Normalization, and the depthwise separable subsampling layer.
     
@@ -82,7 +82,7 @@ Copyright of figures and other materials in the paper belongs to original author
     - 본 연구에서는 Librispeech의 audio signal 샘플 100개를 랜덤하게 추출해서 conformer block을 통해서 process하였고 conformer block activation 마다 값을 기록했음
     - 이웃하는 embedding vecotr간의 cosine 유사도를 측정한 결과 아래 그림과 같은 plot이 나옴
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1jWSiNpjmqt8kdGzmFrI22OMZZ9UYrfb3){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/c38caee5-24a5-4702-953f-dd8c98c5d63a){: width="80%" height="80%"}{: .center}
         
     - 연구진들은 **각각의 speeech frame의 embedding 값과 바로 이웃하는 speech frame의 embedding 값이 거의 95%의 similarity 를 확인하였음.** 4 frame 정도 떨어진 speech frame들도 거의 simailarity가 80%가 넘어감을 확인함.
     - 이러한 결과는 network의 **conformer block이 깊어질수록 temporal redundancy가 커진다**고 이해할 수 있음.
@@ -131,7 +131,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - conformer VS squeezeformer
     
-    ![Figure 4: (Left) Back-to-back preLN and postLN at the boundary of the blocks. (Right) The preLN can be replaced with the learned scaling that readjusts the magnitude of the activation that goes into the subsequent module.](http://drive.google.com/uc?export=view&id=1yg6M4X4GX15RSVHokdxl-2gq4Wz1P8Z2){: width="80%" height="80%"}{: .center}
+    ![Figure 4: (Left) Back-to-back preLN and postLN at the boundary of the blocks. (Right) The preLN can be replaced with the learned scaling that readjusts the magnitude of the activation that goes into the subsequent module.](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1b674492-f670-4eb5-ae1d-c61c3a2d2d25){: width="80%" height="80%"}{: .center}
     
     Figure 4: (Left) Back-to-back preLN and postLN at the boundary of the blocks. (Right) The preLN can be replaced with the learned scaling that readjusts the magnitude of the activation that goes into the subsequent module.
     

@@ -55,24 +55,24 @@ Copyright of figures and other materials in the paper belongs to original author
 - Notations (논문에서 사용될 기호 및 backbone 모델 소개)
     - speech segment 변수 X
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1_cpHAi0jk24pWFE0prZQHqTYpZKrpGA3){: width="30%" height="30%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d1ce3333-af67-445c-84d2-12168f547f20){: width="30%" height="30%"}{: .center}
         
     - speaker **style** latent representation
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1POytM655px6yh-z8CMOaln3b1uGzh-nv){: width="10%" height="10%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/045b0fbd-c65d-488c-a6a3-1658c01aff4e){: width="10%" height="10%"}{: .center}
         
     - speaker **content** latent representation
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1qaA6Y1oNQ5XJzlX303EUFPdHE7fXHNAx){: width="50%" height="50%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5fde073a-a054-4e20-ac18-a0e4ad824f14){: width="50%" height="50%"}{: .center}
         
     - backbone - DSVAE
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1AyjH6uEZd2b6HbqxOqghNkcWnFjJG3Q3){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9e4b0e40-8d04-4955-961c-20cb8adc3a52){: width="80%" height="80%"}{: .center}
         
         - X를 input으로 받으면, encoder Eshare(ES) 을 통해서 W를 생성해 냄.
             - speaker encoder Econtent(EC)는 W를 input으로 받고 posterior 분포를 모델링함
                 
-                ![Untitled](http://drive.google.com/uc?export=view&id=1egpQ9-PNMhUnMDFrMLXtq0K4QpunFbZr){: width="60%" height="60%"}{: .center}
+                ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/34f647ec-c857-4ce9-ae7c-30efc31dc174){: width="60%" height="60%"}{: .center}
                 
                 - Zs랑 Zc는 q(Zs|X)와 q(Zc|x)를 샘플링 해서 얻어짐
                 - Zs는 오직 speaker information을 encoding하고, Zc는 오직 content information을 인코딩하기를 기대함
@@ -91,7 +91,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - joint prior 분포는 다음과 같이 factorised됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1P8hrP-h8JTxoVDUc4x70T9fCPmvkJCZV){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1e561b2b-4e08-467b-bd86-f759f57d341c){: width="60%" height="60%"}{: .center}
     
     - p(Zs)는 표준 정규 분포 N(0, Ids)를 따르고 p세타(Zc)는 autoregressive LSTM을 통해서 얻어짐
 
@@ -99,7 +99,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - joint posterior 분포는 다음과 같이 factorised됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1dUwXY8TISYKrqWrt93hBAR_drRbYoDc2){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/86aa23db-0062-46bf-97f4-b8ba6e20a161){: width="60%" height="60%"}{: .center}
     
     - 각각의 q세타(Zs|W)와 q세타(Zc|W)는 두개의 독립적인 LSTM을 통해서 모델링됨
     - 여기서 W는 Eshare의 출력값임
@@ -108,7 +108,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 먼저 아래 식은 vanilla VAE loss에 관한 식임
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=17pWip3yo12vBWB03vy78tSo63bufW0xM){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/03994086-e700-4c84-bf9c-808c1cb87acb){: width="80%" height="80%"}{: .center}
     
     - kl은 두 분포 간의 KL divergence을 의미
     - 알파와 베타는 balancing factor을 의미
@@ -121,16 +121,16 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - VAE의 original form에서는 mutual information MI(X, Z)는 아래 식과같이 표현되었음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1j80myI9OTqzRhnnPKQqBuhKKX8WgZdSk){: width="30%" height="30%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b28434f4-c558-4e39-bacc-f9d02bac6525){: width="30%" height="30%"}{: .center}
     
 - 그리고 해당 kl의 변형은 아래와 같이 나타내었음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1tUjSFjrfTOrmlnLayfbG4PJyxks5LMNs){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/aa63c762-d087-409a-9a3a-86024c5e04c2){: width="80%" height="80%"}{: .center}
     
     - 위의 식은 variational mutual information이라고 불림
 - VAE의 objective는 아래와 같이 설정됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1szkm5leMtzXFpAsJErhDr3Z2D-UWnPGV){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/2e0c1c1c-d407-4ee9-8e4f-3abe2fa0292d){: width="80%" height="80%"}{: .center}
     
     - 해당 식의 앞부분은 reconstruction loss이고 뒷부분은 Variational mutual information을 나타냄
     - reconstruction loss가 낮다는 것은 variational mutual information이 높다는 것이기 때문에 해당 파트를 동시에 최소화하는 것이 일반적으로는 달성될 수 없음
@@ -139,7 +139,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 따라서 VAE는 reconstruction loss와 variational mutual information loss 를 적절하게 잘 balancing하고자 하며 아래 식과 같이 variational mutual information이 lower bounded를 따르도록 함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1LaAw8dAmNquCZpDBOYeLEvY6P-p0Bk-i){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5374176d-d9fe-498a-b986-ef7753503e18){: width="50%" height="50%"}{: .center}
     
     - A(X,Z)는 bounded variational mutual info를 의미함
     - 해당하는 식 덕분에 VAE training 시에 KL vanishing이 발생하지 않게 되는데 이는 disentanglement의 기반이 되게 한다
@@ -150,11 +150,11 @@ Copyright of figures and other materials in the paper belongs to original author
 - 본 연구에서는 Zs와 Zc간의 information flow가 balancing되어 있으면 disentanglement가 성립할 수 있다고 주장함
 - 아래 식은 본 연구에서 주장한 loss함수임
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1K-JOUeSLqarkBZrcYXkCh3OSyiDSU7jJ){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0edb0da8-da77-4e93-9848-0e4c733a9777){: width="80%" height="80%"}{: .center}
     
     - 2-2-1에 따라서 Zs와 Zcc를 통해서 각각 인코딩된 정보를 summation하는 것은 input speech를 reconstruct하는데에 충분함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=159YE0RfAc2gRC9Q9_cKXSMf8tlH8L14Y){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/90e11062-071f-47d1-b0aa-72ca3ad732d2){: width="80%" height="80%"}{: .center}
         
         - 식을 조금 풀어서 보면, inf 기호가 하한값에 관한 기호이니까 speaker와 contents에 관한 mutual information을 더한 하한값은 적어도 A(X,Z) 즉 bounded variational mutual information보다는 크거나 같아야한다는 것
 - 수렴을 가정한다면, 베타 나누기 알파가 엄청나게 클 경우에는 두개의 variational mutual information term이 M^I(X,Zc)에 의해서 결정될 것임. 이는 KL(q(ZC|X)||p(XC))를 vanishing하게 하여 latent variable으로 encoding 된 정보가 Zs에 의해 결정되게 할 것.
@@ -174,7 +174,7 @@ Copyright of figures and other materials in the paper belongs to original author
 
 - 아래 figure에서 확인할 수 있듯, 베타나누기 알파가 1일때는 발화의 절반만 target speaker으로 변환된 것을 확인할 수 있음. 즉 Zs보다는 Zc를 통한 변화가 보임
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=12P5Roqnnnz5tqb2bDcQrLXYn412ydjv5){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/01e1c4d4-58ad-4e0f-8ee8-0f713dfa67cd){: width="80%" height="80%"}{: .center}
     
     - 값이 100일때는 반대로 Zc는 아무런 역할을 하지 않고 Zs으로 인해서 결과물이 창출된 것을학인할 수 있음
 

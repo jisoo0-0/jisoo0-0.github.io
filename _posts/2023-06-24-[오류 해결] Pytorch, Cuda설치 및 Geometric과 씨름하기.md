@@ -37,7 +37,7 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
         
         - 컨테이너 접속이 온전하게 잘 됐으면 아래와 같은 이상한 글씨가 당신을 마주할 것
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1fJ3LH71mAesVGEp9BWf77BJqQ7nIhCoT){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e13dd194-f8e2-46d6-b584-c256b44b0ee1){: width="80%" height="80%"}{: .center}
             
     - 접속이 온전한 것 같으면 아래 코드 입력
         
@@ -66,7 +66,7 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
 
 5. [https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive) 여기서 local 선택 후 마지막줄은 실행 하면 안됨 .. please.. 무지성으로 계속 하다가 한시간 날린사람 ✋
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1pTtcursqWXIl8v5bK9nbSF-Qno7r1gDm){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/f0e765b5-858a-479b-acba-17f89f254a74){: width="80%" height="80%"}{: .center}
     
     - 막줄 대신에 아래 코드 입력함
         
@@ -77,7 +77,7 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
         - 쿠다 뒤에 11-7은 설치하려고하는 cuda 버전임. 본 post에서는 11.7기준이니까 11-7 입력해준거
     - 이렇게 했는데도 안됐다? 그러면 아래 방법 ㄱ
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=16y5XdjBpdekI2jhM1uEPGHw_xJO913Gi){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8233d0bf-c120-478d-b212-cb9ee44f5160){: width="80%" height="80%"}{: .center}
         
         - 이거 할 때도 driver 선택은 체크 풀어줘야지 오류 안남
     - nvcc -V 명령어로 원하는 cuda 버전이 제대로 설치되었는지 확인함
@@ -122,7 +122,7 @@ Docker기반이긴 하지만 conda 환경이면 무리없이 적용될 것.
         - 이때.. 혹시 모를 불상사를 막기 위해서 현재 자신이 속한 환경이 아까 생성한 conda 가상환경이 맞는지 확인함
             - hoxy.. 나해서.. .. conda 가상환경에 들어와 있다면 터미널에서 명령어를 칠 때 왼쪽에 보이는 부분이 아래와 같을건데…
                 
-                ![Untitled](http://drive.google.com/uc?export=view&id=1GVgd3_V0JyjWFsZcG_OSAPrgiySj2x5J){: width="80%" height="80%"}{: .center}
+                ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/14efc26c-ea0e-4b21-868d-eec7004a5b2e){: width="80%" height="80%"}{: .center}
                 
                 - () 맨앞 소괄호 안에 아까 지정해준 conda 가상환경 이름이 나와있으면 ok 이고 base 라고 나와있으면 아직 접속 안된거니까 가상환경을 활성화 시켜줘야함
 <br/>
