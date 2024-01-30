@@ -52,9 +52,9 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 
 ### Problem statement
 
-![Untitled](http://drive.google.com/uc?export=view&id=1mTqf1b9h39isQQmrQWIAXcdPEmuQBsKL){: width="80%" height="80%"}{: .center}
+![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/128863f1-0c08-4126-abd8-57f9aec15686){: width="80%" height="80%"}{: .center}
 
-![Untitled](http://drive.google.com/uc?export=view&id=1_Szri1iE6606yaxisRC8bVGkZImWW6o4){: width="80%" height="80%"}{: .center}
+![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/6f49f592-67fd-4b92-b14b-970007007118){: width="80%" height="80%"}{: .center}
 
 - step t에서의 input은 yi, t-1, xit의 concat임
     - yi : i번째 PV power generated at time t
@@ -72,7 +72,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
         - 넓은 receptive field를 가능하게 하였고 결과적으로 롱텀 메모리를 포착할 수 있게했음
         - sequence element s 에서의 dilated conv operator F는 다음과 같이 정의됨
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1DSQONXAgJ3SrrnIX0BFG_IOd82-0eRoa){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/bef65c7f-0efc-41d2-8daa-7be6ae3423a6){: width="30%" height="30%"}{: .center}
             
             - f는 conv filter
             - x는 sequential 한 input
@@ -82,9 +82,9 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
     - Residual connection
         - Residual block은 gradient vanishing problem을 해결할 수 있도록 도움. 주된 아이디어는 x를 stacked layers에 input해준다는 것.
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1yxkJDieUspVztdFt3FvIE66M_fvgLnB3){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/fecde7a1-7496-45d3-a322-39b31639833b){: width="30%" height="30%"}{: .center}
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=124a_3I4vcP82JspMENV4wntn6e48tyrn){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d44058cd-4e01-4055-9c82-b72ff5836398){: width="80%" height="80%"}{: .center}
             
             - 좌/ 우 두가지의 브랜치가 있는데, 두가지의 width가 같지 않기 때문에, 1*1 Cnv를 사용해서 우측 브랜치의 width를 조정해줌
     - dilated conv을 이용하면 더 넓은 receptive field를 가질 수 있지만, long input sequence를 효율적으로 다루지는 못함(더 많은 레이어, 더 많은 학습시간, 더 복잡한 구조)
@@ -96,11 +96,11 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 - seq2seq framework에서는 encoder와 decoder가 sequential한 step을 가지고 매 시점마다 hidden state을 생성하도록 함.
 - soft attention은 encoder의 hidden state과 decoder의 hidden state을 input으로 받고, context vector을 생산해냄
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1ajt7HBfoyZyydHAFENRYqNkvIhrkJzqG){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/253917e8-8e3d-4c76-bdf5-a6c1a14b9e67){: width="30%" height="30%"}{: .center}
     
 - 이후 softmax함수를 통해서 정규화되고 attention 가중치를 생성하게 되며, 매 encoder의 hidden state hi에 대한 weight ai의 식은 아래와 같음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1yu5EA8JOyNuEa1n0nyqKF0h2LZyE2wkU){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/295cfa8e-647e-4246-a2a3-45443a8611ae){: width="30%" height="30%"}{: .center}
     
     - 이 가중치는 encoder step i 가 decoder output setp t에 대해서 가 얼마나 중요한지를 나타냄.
 - 최종적으로 attention layer의 output은 attention wieght 과 encoder hidden state을 dot product해서 얻어지게되며, weighted output은 decoder의 hidden state과 concat되어서 decoder의 output을 생성하게 됨
@@ -119,14 +119,14 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 - TCNN이 예측하기 위해서 필요한 input step의 개수는 Conv에 있는 모든 effective 한 history들을 합친 개수임
 - Tl길이만큼의 input sequence를 커버하기 위한 receptive fild를 위해서는, TCNN은 최소한 nl 개의 conv layer가 필요함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1EKdh-s9eq9Ohs2-wb9Bj73gpnAh63_Yz){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/69c913bd-99be-45ee-b280-7efdba93764a){: width="50%" height="50%"}{: .center}
     
     - k = 커널 사이즈, dl = dilation factor, Tl : input sequence length, nl : conv layer 개수
     - 본 연구에서는 tl이 20~24, k  = 3이기 때문에, 4개의 conv layer가 필요함
 
 ## Model Architecture
 
-![Untitled](http://drive.google.com/uc?export=view&id=1DZCa0TqemtaFKGXgulwF5nUXOFaAXHBb){: width="80%" height="80%"}{: .center}
+![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/6285c460-b844-40cc-8daf-f0fe0f89181b){: width="80%" height="80%"}{: .center}
 
 - TCAN은 그림과 같이 3개의 부분으로 나누어져 있음
     - temporal conv layer
@@ -140,7 +140,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 
 - TCAN은 temporal latent factor (ht-Tl:t)를 multiple dilated temporal conv layer(TC)들을 통해서 추출함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1V8KDvNr7i9fN8XTwv9hnaur4ckVlo6o8){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9f844335-7847-46f7-a83f-759571187d67){: width="30%" height="30%"}{: .center}
     
 - 추출된 latent factor은 intput sequence의 모든 정보를 encode함
 
@@ -151,18 +151,18 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 - 시퀀스 모델링 테스크에서는 future timestep가 몇몇개의 이전 timestep에 강하게 관련되어 있음
     - ex. t시점에서의 solar power는 같은 날 몇시간 전 시점이나, 다른 날 같은 시점의 solar power과 강하게 연관되어 있음
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1x72alOIqD4ptxzt-4D5sSA_WWMbouMQu){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9b764c39-e761-427a-9ca0-c1386564b8dd){: width="80%" height="80%"}{: .center}
         
 - 본 연구에서는 알파-entmax attention을 적용했고, 아래 식과같이 정의됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KRsRY55jCTyn_AemA6-y4GOlsro7E9kS){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/db326f36-5c97-4823-9893-986cedc2dcd6){: width="80%" height="80%"}{: .center}
     
     - r : 큰곱하기
     - 1 : all-one vector
     - 알파 : 하이퍼파라미터
     - 알파-entmax 는 알파가 1이고 softmax일 때랑 알파가 2이고 sparsemax를 사용할때 동일함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1iDsDpyHNCY2PE5WGMWK8EOVtKVugXJPn){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/6cf8c855-4c05-4341-9448-f3a2b0fa9206){: width="80%" height="80%"}{: .center}
         
         - ct는 attention score과 hidden state의 dot product한 결과값
 
@@ -172,7 +172,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 - 본 연구에서는 데이터가 가우시안 분포를 따른다고 가정하는데, 가우시안 분포는 real-world time series 모델링 시 자주 사용됨
 - attention vector을 분포의 평균과 variance를 포함하는 예측 결과로 transfer함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1D8Zgj9rw8Dw2b35wuB28w0qb8SZDYdwv){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/4c4df2fd-7e95-4bb4-b316-7cddbbbc92ec){: width="80%" height="80%"}{: .center}
     
     - 11번 식은 variance가 항상 양수가 되도록 만들어줌
     - 10, 11번 식을 통해서 가우시안 분포를 형성하고, 분포에서 prediction이 샘플링 될 수 있게됨
@@ -181,7 +181,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 
 - 아래 식을 통해서 loss 가 최소화됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1baGEc7KUEy5sVpZQ_Oal7WoOTNp7FwDo){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/6e8b5e43-6b27-41c5-a51b-2f218e4829e6){: width="80%" height="80%"}{: .center}
     
     - y^는 point 예측
     - point와 probabilistic 예측을 모두 다 정확하기 위해서 MAE 와 Negative Log-Likelihood(NLL)을 합쳐서 사용함.
@@ -217,7 +217,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 
 - Accuracy results
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1cGsTGa4iVyOKeA0cTICEW4iTBi_loaIt){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/41de341b-d365-40d1-8e80-87a24723b4a7){: width="80%" height="80%"}{: .center}
     
     - Persistence와 N-Beats가 probabilistic forecastfmf todtjdgkwl dksgrl Eoansdp, 0.5 loss(==MAE loss)만 결과가 나옴
     - Point forecast에서는
@@ -227,7 +227,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
 - 2개의 consecuative days의 예측 결과
 - consecuative
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1pDTFPPK_PVEDDzV6P7s1TvEVk33kYEJL){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9b826308-02ce-4fb8-99ef-5f6b71b35175){: width="80%" height="80%"}{: .center}
     
     - 좌측은 actual vs predicted values for each day
         - 얼마나 잘 예측했는지를 보여줌
@@ -238,7 +238,7 @@ title: "[논문리뷰] Temporal Convolutional Attention Neural Networks for Time
                 - 첫번째 future prediction은 second input step으로만 결정됨
     - TCAN과 TCNN-4의 학습 속도를 비교했을 때, TCAN이 상대적으로 빠른 학습을 보여주었음
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=14_bLE3gLjecVXN636nLWsyFfk9KcpvQl){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/12084005-2af7-4092-bfb8-948ab526fb19){: width="60%" height="60%"}{: .center}
 <br/>
 <br/>
 <div id="disqus_thread"></div>

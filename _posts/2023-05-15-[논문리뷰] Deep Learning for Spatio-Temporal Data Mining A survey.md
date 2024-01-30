@@ -61,7 +61,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
     - l : event 가 일어난 장소
     - t : event가 일어난 시간
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1Xf8Yn_ue4r50EN6t22MgGTUH-ANKgA1x){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a74d9b2e-2f62-41c3-b9fe-bc17cb672d3d){: width="80%" height="80%"}{: .center}
 - Event Data의 응용 분야
     - criminology
         - urban crimes
@@ -78,7 +78,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
     - 주로 GPS와 같이 움직이는 object에 붙은 location sensor를 통해서 얻을 수 있음
     - (location, time)간의 연속적인 집합으로 표현 가능
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1p7oz-tC-cLYy7z4_A-nPDXN-j0RcO6mt){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3bd949ec-6421-4f38-94b0-e69e0e8c6778){: width="80%" height="80%"}{: .center}
         
 
 ### 2-1-3 Point Reference Data
@@ -87,7 +87,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
     - 점이 이동하면서 데이터가 변하는 것을 말하는 것 같음
 - EX : 기상 측정 풍선이 이동하면서 생성하는 기상 데이터나, 온도 센서에 의해 측정된 해수면 온도의 점 기준 데이터
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1fP-V9eNou2q6jwo8OWERiVqmlWiu4UrR){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/989b15a9-81a6-4b9c-8b4c-0625e9de09f6){: width="80%" height="80%"}{: .center}
     
     - 두개의 타임스템프에 관한 figure
 
@@ -98,7 +98,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
     - EX: 도시별로 수집된 미세먼지 농도 데이터 , road 마다 수집된 traffic flow 데이터
     - 예시 사진
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1BxTGtziGf-RQLPIF0ZP5jwT0J48107QK){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d4679142-97c9-4b4b-8721-f3b1d887f716){: width="80%" height="80%"}{: .center}
     
 
 ### 2-1-5 Video Data
@@ -122,7 +122,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
         - 시계열로도 instantiated될 수 있음
       
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1w2EYRXAGT4tNS0y96HeMdLvYGDzdY3J2){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5ea773a5-364d-4739-9f71-785e8da29dd0){: width="80%" height="80%"}{: .center}
     
     - **Covid와 같은 경우, 현재 이미지로 변환되어 입력값으로 들어갈 예정이니까 Matrix(2D), Event으로 설명되는게 맞음**
 
@@ -142,14 +142,14 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 
 - RBM, CNN, Graph CNN, RNN, LSTM, AE/SAE, seq2seq을 간단히 설명한다. 
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1SfUD6EKDH0OPcycsQSGKAb698m1FioKh){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/983e5f60-8efa-413f-8076-83414aea47bc){: width="80%" height="80%"}{: .center}
     
 
 ### [3-1-1 Restricted Boltzmann Machines (RBM)](https://angeloyeo.github.io/2020/10/02/RBM.html)
 
 - RBM은 2개의 layer으로 구성된 stochastic(확률적) neural network이다. 
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1jtHXQGBJm2oxSD0m_i4cRrx5myoeAfYs){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9622d828-6e96-4fa9-a88b-e475e5b26588){: width="80%" height="80%"}{: .center}
     
     - **무방향 이분 그래프**
     - RBM에 속한 모든 노드들은 가중치가 있는 엣지들로 연결되어 있음
@@ -162,7 +162,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 - CNN 구성 요소 : 인풋 레이어, CNN 레이어, 풀링 레이어, fully connected layer, 출력 레이어
 - pooling layer이후에 정규화 레이어 추가 가능
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1Mw84rBIRNTaa9uxYTZbyHDqsMqI5dmiN){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/edc5236f-ef8a-4c47-9a43-f04d8ea3cecd){: width="80%" height="80%"}{: .center}
     
     - raw image 를 input으로 받으면, CNN layer가 high level latent feature을 여러개의 kernel(filter)을 통해서 학습하게 됨
     - 이후, high level feature들이 pooling layer으로 input되고, spatial 차원을 통해 downsampling 작업이 진행되며(차원축소 말하는듯), 이 때 파라미터의 수가 줄어든다
@@ -173,7 +173,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 
 - Pooling operation에 따라서 각 노드의 이웃 노드들에 대해서 convolutional transformation을 적용할 수 있다. 
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1Vu5z1RrVGfqLlHiVAeNDupRLtzPt0qQ1){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a5d26923-9146-4d84-9d15-ce88510ff6b4){: width="80%" height="80%"}{: .center}
     
     - 여러개의 graph convolution layer을 stack 함으로서, 각 노드에 대한 latent embedding은 여러개의 홉만큼 더 떨어진 노드에 대한 더 많은 정보를 가질 수 있게 된다.
     - 그래프에 있는 노드에 대해 latent embedding이 끝나면, latent embedding을 feed-forward network에 넣어서 classification / regression task를 진행할 수 있음
@@ -187,12 +187,12 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 - Xt는 input data, A는 network의 파라미터, ht는 학습된 hidden state을 의미한다.
 - RNN의 가장 주된 문제점은 gradient 가 vanishing함에 따라서, short term memory 이슈가 발생한다는 것 → **이를 해결하기 위한 방안이 LSTM이다**
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1eZ8Be2RPr1pOm4f0uXH-s9eDVBPGEEy_){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/46f994d8-5f20-4b8f-8217-f783be2ef8d9){: width="80%" height="80%"}{: .center}
     
 - LSTM은 인풋 데이터의 long-term dependencies를 학습할 수 있다.
 - specially 설계된 메모리 유닛 덕분에 더 긴 historical info를 기억할 수 있다.
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1eTfLcy1TMJ184wJNRegnASoOChb3LMWg){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e5064e38-4308-473d-a25a-c1eb06e25010){: width="80%" height="80%"}{: .center}
     
     - LSTM 구성  : input gate, forget gate, output gate
     - 세개의 게이트를 통해서 새로운 input을 들여보낼 것인지, 중요하지 않은 정보를 무시할 것인지, 해당 정보를 출력에 영향을 미치게 할 것인지를 정함
@@ -201,7 +201,7 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 
 - 입출력의 길이가 고정된다. 
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1UGdHtddWsw8ZOG9KrXv15mJt6zQ4dc1t){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0f3df557-b614-4bd9-90b2-7d2a30bdc889){: width="80%" height="80%"}{: .center}
     
     - Seq2Seq 구성 요소 : encoder, intermediate vector, decoder
     - sequence data간의 dependencies를 잘 포착하는 편
@@ -220,14 +220,14 @@ Covid 관련 GCN project을 위해서 reseach하는 도중, spatio-temporal data
 - spatial correlation을 반영하고 싶다면, GCNN을 사용하는 것이 좋은 선택이 될 수 있고, STD가 만약 image-like matrix으로 표현된다면 CNN이 적절한 선택일 것이라고 논문은 설명한다.
 - **If the input is a sequence of image-like matrices, hybrid models that combine CNN and RNN such as ConvLSTM can be used [1], [61].**
     
-    ![yes.JPG](http://drive.google.com/uc?export=view&id=1w2C3L9DTyZKAYSQfc4PhufP-hbHw-v6t){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5c54e02f-2c43-4b1c-9abf-44f7e786d2f9){: width="80%" height="80%"}{: .center}
     
 
 # 4 Deep Learning Models for Addressing STDM problems
 
 - One can see the largest problemcategory is prediction, accounting for more than 70 percent works.
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1_r3F7yRAHHUsbrqtCLZzh4OAZSE_TAT3){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e1976808-d6f6-4d9b-ba8a-1387a216e060){: width="60%" height="60%"}{: .center}
     
 
 ## 4-1 Predictive Learning

@@ -52,7 +52,7 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 - ARMA 모델은 stationary time series에서부터 relevant 한 정보를 추출할 수 있음
 - 제한적인 과거 데이터를 기반으로 효과적인 예측 결과를 얻을 수 있음
 - xt = stationary time series이고 , ARMA(p,q) model은 아래 식과 같음
-    ![Untitled](http://drive.google.com/uc?export=view&id=1zv87RccmmGFfwGWVw_wTcH8s9GLsy9o_){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d574ac19-a044-4a19-ace2-7427ff660151){: width="80%" height="80%"}{: .center}
     
     - ai = autoregressive parameter
     - bj = moving average parameter
@@ -64,7 +64,7 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 - ARMA 모델을 보다 정확하게 하기 위해서는p,q의 범위를 시계열 특성에 따라서 먼저 식별해야함
 - 더 높은 order(p,q)를 설정하면 더 좋은 예측을 내놓지만, 더 많은 컴퓨터 자원을 사용하게 됨.
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=10v2v2qs_9DoqHW_VK6SToGlNrjMcMSZG){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/aaa20d13-1777-4d21-99e5-592ee5eefed2){: width="80%" height="80%"}{: .center}
     
     - AIC, BIC라는 것을 통해서 ordering 범위를 설정해줌
     - 가장 작은 AIC와 BIC는 만족스로운 모델을 얻을 수 있다고 함
@@ -79,12 +79,12 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 - SVM의 기본적인 원칙은 sample set {(xi, yi), i = 1,2,3,4,..N)}, xi 는 R^n에 포함, 는 입력된 샘플 공간을 represent 하고, yi 는 R, N에 포함, yi는 샘플 데이터의 사이즈에 관련있다는 것
 - 기본 아이디어는 인풋 데이터의 벡터를 고차원 피쳐 차원에 맵핑하고자 하는 것이고, 피쳐 공간의 선형회귀를 얻기 위해서 아래의 식을 사용함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1fdd6Z6PRgn98hTxm9yx35Jv1Ac4VSM7H){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/cca2aeb5-ed89-4e8c-b099-15920acd57f4){: width="80%" height="80%"}{: .center}
     
 - o(x)가 맵핑 함수, wt가 training dataset을 통해서 예측된 파라미터, b는 상수 coefficient.
 - 피쳐 공간의 선형 회귀는 5,6의 constraints를 따라서 위험 최소화 규칙을 따름
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=11kSnFFQjKkP-kZonJ8qbRcPmh8jnqcy4){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d23bcb77-5e3e-461d-a85f-da42da71e2b8){: width="80%" height="80%"}{: .center}
     
     - xi가 입력 벡터이고, i i*은 relaxation factor이며 이건 loss coefficient e와 관련이 있음.
     - C는 회귀의 질을 control 하기 위해서 사용된 패널티 팩터임
@@ -96,21 +96,21 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 - ARMA와  PRo-SVM 모델을 합친 것은 시계열 방법과 inteligent 방법을 합친 것으로 좀 더 값진 정보를 얻을수 있음과 동시에 정확도를 향상시킬 수 있음
 - 아래 식으로 표현 가능
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1r0zs2GmaXHBzlyMwoDnZncJqV5vyP4qz){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/6803afcf-6f70-4fd2-a997-8220af0f24ff){: width="80%" height="80%"}{: .center}
     
     - w1 + w2 = 1
     - Fcomb = 하이브리드 모델의 결과값
 - 공분산 최소화 방법이 PSO-SVM-ARMA 예측 모델을 설정하기 위해서 사용되었으며, modified weight combination solution으로 동일 가중치 방법임
     - 9번 식이 최소화 되어서 가중치 coefficient들이 최적화될 수 있도록 세팅함
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1s4bBWySs52LJE8jY9nyf6l5tr2TDkKXE){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/f78a6cb7-ef55-481c-8c24-1088fb92f3d9){: width="80%" height="80%"}{: .center}
         
 
 ## 2.D The modeling process of PSO-SVM-ARMA Model
 
 - PSO-SVM 모델이 먼저 학습되고 파라미터들이 설정/최적화됨
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1Ej9qtzXSUAAjHR3sFeIrQ7KoUfMd5ZJ3){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/7a8018fa-43e7-4254-9cb2-c7a7958dc3a4){: width="80%" height="80%"}{: .center}
     
 
 # 3. Clustered hybrid wind power prediction model
@@ -121,13 +121,13 @@ title: "[논문리뷰] Clustered Hybrid Wind Power Prediction Model Based on ARM
 
 - 논문에서 제안한 모델은 과거 데이터에 기반함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1Ok11D69Laz4s2H2DdTOhDhJYnAhWp3Nw){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/35cdd8ca-89e6-4030-91a5-c3606f529af8){: width="80%" height="80%"}{: .center}
     
 - 클러스터링 이론에 따라서, 일년치의 과거 데이터는 열개의 클러스터링으로 나누어지게 됨
     - **이 때 각기 다른 시간과 특성에 따라서 나누어지게 되고, 본 논문에서 제안된 모델은 각기다른 파라미터를 통해 각 클러스터를 기반으로 학습됨**
         - 클러스터가 기준이 되어서 학습된다는 말인듯?
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1ZLMjisU_v6urEDLD7DcUDwLkpTMWzWtm){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/4fe8118d-5b42-45a8-b294-f492e6e0bd26){: width="80%" height="80%"}{: .center}
         
     - 풍력 예측이 필요한 경우, 예측 데이터가 속한 클러스터를 판단하고, 과거 데이터는 예측을 위해서 해당 클러스터 모델에 입력됨
     - DTW

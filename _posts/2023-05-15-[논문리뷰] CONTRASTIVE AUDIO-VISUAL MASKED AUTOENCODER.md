@@ -61,7 +61,7 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 # 2 Constrastive audio-visual masked autoencoder
 
 ## 2.1 Preliminaries
-![Untitled](http://drive.google.com/uc?export=view&id=1Xf8Yn_ue4r50EN6t22MgGTUH-ANKgA1x){: width="80%" height="80%"}{: .center}
+![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/67ada741-738e-4439-b8b9-03d0ed351029){: width="80%" height="80%"}{: .center}
 ### 2.1.1 Audio and image pre-processing and tokenization
 
 - AST와 ViT를 통해서 오디오와 이미지 입력을 각각 전처리 / 토큰화 함

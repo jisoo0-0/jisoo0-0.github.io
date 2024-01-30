@@ -80,7 +80,7 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
 # 4 The Feasibility of Using the Magnetic Field for IO Detection
 
 - **They, however, rely on the variance of the magnetic field, which is not a good measure.** We analyze the variance of various samples from indoor and outdoor environments to corroborate this, and the results are shown in Figure 1.
-    ![Figure 1. Magnetic variance for the indoor and outdoor environment. (a) Magnetic variance; (b) Indoor & outdoor environment of given variance.](http://drive.google.com/uc?export=view&id=1K6esdZA8m8wxBR7p4AhALmKmVKv65aY9){: width="80%" height="80%"}{: .center}
+    ![Figure 1. Magnetic variance for the indoor and outdoor environment. (a) Magnetic variance; (b) Indoor & outdoor environment of given variance.](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/42376dce-962a-4716-b743-0024b4b82e29){: width="80%" height="80%"}{: .center}
     
     Figure 1. Magnetic variance for the indoor and outdoor environment. (a) Magnetic variance; (b) Indoor & outdoor environment of given variance.
     
@@ -94,13 +94,13 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
         
         - 첫번째 그룹에 대한 그림이 Figure2인데, 사분위간이나 제곱 편차의 차이가 indoor/outdoor에 있다는걸 보여주고 싶었던 것 같음
             
-            ![Figure 2. Magnetic features for the indoor and outdoor environment. (a) Inter-quartile; (b) Squared average deviation.](http://drive.google.com/uc?export=view&id=1JztpKkWewEbYBWzVHtii0LgghnsQ79Hf){: width="80%" height="80%"}{: .center}
+            ![Figure 2. Magnetic features for the indoor and outdoor environment. (a) Inter-quartile; (b) Squared average deviation.](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/164389e2-1121-4436-b237-ad02c5a9142a){: width="80%" height="80%"}{: .center}
             
             Figure 2. Magnetic features for the indoor and outdoor environment. (a) Inter-quartile; (b) Squared average deviation.
             
 - Figure 3 shows the plots for kurtosis, and it shows that it is not a good indicator to identify the indoor and outdoor environment. **However, when plotted against the median for the same data, it becomes more meaningful and definitive**
     
-    ![Figure 3. (a) Kurtosis and (b) kurtosis and median for the indoor and outdoor environment.](http://drive.google.com/uc?export=view&id=1KiFFDG-1fofq7sE-ptvtYRQAL454IwAn){: width="80%" height="80%"}{: .center}
+    ![Figure 3. (a) Kurtosis and (b) kurtosis and median for the indoor and outdoor environment.](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e0cbc6bd-6ecf-4618-b4c9-1a2c2d2abbcc){: width="80%" height="80%"}{: .center}
     
     Figure 3. (a) Kurtosis and (b) kurtosis and median for the indoor and outdoor environment.
     
@@ -112,7 +112,7 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
         - 본 연구에서 16개의 different spatial feature을 extract할 수 있었고 이를 통해서 indoor과 outdoor을 구별할 수 있었음
         - 아래 표를 통해서 이러한 분석을 진행하였음.
             
-            ![Untitled](http://drive.google.com/uc?export=view&id=1Ki1cjtMd3Jnhj3br6tk16BOo6h0j1NJ2){: width="80%" height="80%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b737e072-8010-43d4-a1db-084111acfc4e){: width="80%" height="80%"}{: .center}
             
         - 많은 연구들이 magnetic data을 통해서 IO task을 진행하였지만, magnetic data만을 가지고 IO task를 진행한 연구는 본 연구가 처음임
 
@@ -127,7 +127,7 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
 
 - 파란색으로 줄쳐진 부분은 outdoor data가 수집된 장소, 빨간색은 indoor 장소
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KWoOLVnxqcEqqi5YrYu0rBjwiM9xjbJN){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8555ece8-4651-4f7d-b58d-bd9affc529d0){: width="80%" height="80%"}{: .center}
     
 
 ## 6.2 Data Collection
@@ -138,18 +138,18 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
 
 - 아래 figure과 같이 magnetic intensity는 indoor과 outdoor이 확연한 차이를 보임. 하지만 본 연구에서는 magnetic intensity는 사용되지 않았는데, 그 이유로 indoor과 outdoor의 환경이 비슷하다면 비슷한 값이 나오기 때문이라고 주장했음.
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KV0gcobJZb5SKCyXxDWbnz9hucLXdz8q){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/4535774b-5290-4476-bbb2-afb3ad0c1bcf){: width="80%" height="80%"}{: .center}
     
     - DT, SVM, GMB, RI, kNN classification은 정확도가 50% 언저리였으며 NB와 RF는 그래도 좋으 ㄴ성능을 보였음.
     - 앞서 언급되었듯 ferromagnetic 재질들은 magnetic field의 강도를 방해하고 anomalies를 산출해 낸다. 주차장에 있는 vehicl들과 같은 경우 이러한 이유로 약 1m거리에 있는 magnetic sensor을 방해하였음. 이러한 방해는 magnetic field 의 sudden variance으로 이어졌으며 classification error을 발생하게 했음.
     - 추가적으로 data에 있는 noise또한 낮은 정확도에 기여하였음.
 - 또 다른 이유로는 대교가 concrete으로 이어져 있기 때문에 대교 밑으로 걸어갈 때 magnetic field가 방해받았을것이라고 추측함
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KPDcMl20zj0cptaUAU7m8iWSdGXvPU4a){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/20b24251-a222-44ee-b626-423ec27a43cc){: width="80%" height="80%"}{: .center}
     
 - 앙상블 학습 기법을 사용해서 정확도를 향상시킬 수 있었음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KOy4U6S6sfJ0rTECrNnMydK8Yqt2jdAB){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0cec29da-10ba-4738-beb4-bd7417b876e9){: width="80%" height="80%"}{: .center}
     
     - RI랑 DT를 base learner으로 설정하였고,이들은 NB을 통해서 final classification할 수 있었음.
     - data의 noise를 제거하기 위해서 windowing을 사용해서 이동 평균법을 사용함
@@ -163,20 +163,20 @@ title: "[논문리뷰] MagIO: Magnetic Field Strength Based Indoor- Outdoor Dete
 - GPS, Wi-Fi, light sensor 데이터도 수집하였음
 - 본 연구에서는 추가적인 sensor 데이터가 individual 하게 사용되는 방안, fusion되어서 사용되는 방안을 각각 확인했음
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KG8WtK5zzVm9B9Esqm4kSZpkah70xOY1){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/fa2c054f-3176-4e03-afa6-1074fe4eff8a){: width="80%" height="80%"}{: .center}
     
     - Wifi 단독으로 사용하기에는 부족해
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1KFb2Dl-YnkwZJCnuaJT6M_A76TlGU1rB){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/9254b829-7da0-4205-94a4-7f6858fd1cb1){: width="80%" height="80%"}{: .center}
     
     - 위의 figure는 clearly indicates that a clear threshold on RSSI was not very practical for the given scenario and so for the number of scanned APs.
     - light sensor는 날씨에 따라서 영향을 많이 받음.
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1KCeOr8BaGMNP2OXR4JiMreqheVaKWFZ2){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/08ec5aa1-10de-412c-be46-02dd08f4061b){: width="80%" height="80%"}{: .center}
         
     - Power consumptions
         
-        ![Untitled](http://drive.google.com/uc?export=view&id=1K7zKHLDonZQkhRyT0L1LlKBhYdqk52g_){: width="80%" height="80%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/2278f999-11d8-4cb1-8e34-c37c08721163){: width="80%" height="80%"}{: .center}
         
         - 아마 센서에 따라서 소비되는 전력이 다르기 때문에 GPS나 WIFI 말고 다른 센서를 사용했을때의 강점을 강조하고 싶었던 것 같음
 

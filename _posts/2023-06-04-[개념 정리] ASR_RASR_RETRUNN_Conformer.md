@@ -174,7 +174,7 @@ title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 - Conformer는 음성 인식에서 주로 사용되는 model임
     - **Transformer는 전체적인 의미를 잘 파악하고 CNN은 부분적 의미를 잘 파악하니까 이 둘을 같이 사용한게 Conformer**
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1ckRm5_KhqBazH9pOP9d1uuNYtzwth7vs){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/07ee92d7-814a-45a0-821b-64b63e3ded13){: width="80%" height="80%"}{: .center}
     
 
 ### 1.3.1 Comprehensive Architecture
@@ -183,7 +183,7 @@ title: "[개념정리] ASR System / RASR / RETURNN / Comformer"
 - MSHA Module에는 Relative Positional encoding을 사용해서 상대적 위치 정보를 가지고 갈 수 있게
 - FF Module에서는 Half step residual connection 사용
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=1-7GSLqW9FeAkJXSi_cI8wAkEvJXMYKNS){: width="80%" height="80%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/82840fc9-7f55-4b3c-ab85-944a8ae3fe8f){: width="80%" height="80%"}{: .center}
 
 
 <br/>
