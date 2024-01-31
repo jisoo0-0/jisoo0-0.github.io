@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 논문리뷰
-tags: SpatioTemporal, Graph
+tags: ContrastiveLearning, Audio, Autoencoder
 comments: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
@@ -888,3 +888,22 @@ def forward(self, audio, imgs, mask_ratio_a=0.75, mask_ratio_v=0.75, mae_loss_we
     
             return a, v
     ```
+
+
+
+<br/>
+<br/>
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-jisoo0-0-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
