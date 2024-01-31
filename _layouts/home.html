@@ -42,18 +42,34 @@ layout: default
     {% if site.paginate %}
       <div class="pager">
         <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
+          {%- assign max_pages = 5 -%}
+          {%- assign half_window = max_pages | divided_by: 2 -%}
+          {%- assign window_start = paginator.page | minus: half_window -%}
+          {%- assign window_end = paginator.page | plus: half_window -%}
+        
+          {%- if window_start < 1 -%}
+            {%- assign window_end = window_end | minus: window_start | plus: 1 -%}
+            {%- assign window_start = 1 -%}
+          {%- endif -%}
+        
+          {%- if window_end > paginator.total_pages -%}
+            {%- assign difference = window_end | minus: paginator.total_pages -%}
+            {%- assign adjusted_window_start = window_start | minus: difference -%}
+            {%- assign window_end = paginator.total_pages -%}
+          {%- endif -%}
+        
+          {%- if window_start < 1 -%}
+            {%- assign window_start = 1 -%}
+          {%- endif -%}
+        
+          {%- for page in (window_start..window_end) -%}
+            {%- if page == paginator.page -%}
+              <li><div class="current-page">{{ page }}</div></li>
+            {%- else -%}
+              <li><a href="{{ paginator.paginate_path | replace: ':num', page | relative_url }}">{{ page }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>        
       </div>
     {%- endif %}
 
@@ -63,3 +79,16 @@ layout: default
     <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
   {%- endif -%}
 </div>
+<!-- <ul class="pagination">
+  {%- if paginator.previous_page %}
+    <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+  {%- else %}
+    <li><div class="pager-edge">•</div></li>
+  {%- endif %}
+    <li><div class="current-page">{{ paginator.page }}</div></li>
+  {%- if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+  {%- else %}
+    <li><div class="pager-edge">•</div></li>
+  {%- endif %}
+  </ul> -->
