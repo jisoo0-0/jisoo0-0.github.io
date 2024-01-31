@@ -61,12 +61,13 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 # 2 Constrastive audio-visual masked autoencoder
 
 ## 2.1 Preliminaries
-![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/67ada741-738e-4439-b8b9-03d0ed351029){: width="80%" height="80%"}{: .center}
+
 ### 2.1.1 Audio and image pre-processing and tokenization
 
 - AST와 ViT를 통해서 오디오와 이미지 입력을 각각 전처리 / 토큰화 함
     
-    ![스크린샷 2023-10-11 오후 2.13.14.png](.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3bdeaa41-5f42-44ce-b4cf-d82e0b1d768d)
+
     
     - model의 fine-tune을 위해서 AudioSet의 10초 video와 VGGSound을 사용함
         - audio는 10 second audio waveform이 128차원의 log mel filterbank sequence으로 변환되었음
@@ -75,14 +76,14 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
             - 결과적으로 1024x128 스펙토그램이 생성되었는데, 본 연구에서는 512 개의 16x16의 패치로 나눴음
                 - input
                     
-                    ![스크린샷 2023-10-11 오후 2.16.51.png](.png)
+                    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e7881745-d959-426a-a0a1-bfb06466db05)
                     
         - video는 transformer을 상요해서 처리되었음
             - 연산량을 줄이기 위해서 frame aggregation 전략을 사용함
             - RGB frame을 resize 하고 중앙을 기준으로 224x224 사이즈로 cropping함. 이후 196개의 16x16 패치로 나눔
                 - input
                     
-                    ![스크린샷 2023-10-11 오후 2.20.15.png](.png)
+                    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/dcf4d28c-cac7-4b95-be8d-b5e4b8cf2efc)
                     
 
 ### 2.1.2 The transformer architecture
@@ -95,21 +96,20 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 - Figure 1.B에 CAV가 나와있음
     - audio-visual pair sample의 N 배치
         
-        ![스크린샷 2023-10-11 오후 2.23.59.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-11_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_2.23.59.png)
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/d282242f-1f4b-4b9e-a691-2e3248319bff){: width="30%" height="30%"}{: .center}
+
         
     - 먼저 audio와 image를 pre-process 하고 tokenize을 해서, audio , visual sequence token {a_i, v_i}를 각 sample i 마다 얻을 수 있게 됨
     - 이후 각 a_i, v_i를 E_A와 E_V에 입력해주고 결과값을 pooling해줌 (여기서 개수 맞춰짐)
     - c_i^a 와 c_i^v에 대해서 constrastive loss 를 적용해줌
-        
-        ![스크린샷 2023-10-11 오후 2.28.08.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-11_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_2.28.08.png)
-        
-        ![스크린샷 2023-10-11 오후 2.29.51.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-11_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_2.29.51.png)
-        
         - 이게 왜 constrastive loss 인가?
+            
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b0a2c2f3-c466-4812-98e4-d6fc5f538edd){: width="40%" height="40%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/cc02dcbe-b5ec-4818-b882-4a300f6fce6c){: width="80%" height="80%"}{: .center}
+            
             - 내적은 각 vector의 similarity 를 나타내는데, 위의 식에서는 s_{i,i}의 값은 작아지게 s_{i,k}의 값은 커지게 됨. 즉 해당 수식을 loss 함수로 사용하게 된다면, 같은 샘플에 대한 vector간의 값은 낮아지고 다른 vector간의 값은 높아게 됨
-                
-                ![스크린샷 2023-10-11 오후 2.48.09.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-11_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_2.48.09.png)
-                
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/f008c9d1-bcb2-4faa-abb7-b4363f40e365){: width="80%" height="80%"}{: .center}
+
 
 ### 2.1.4 Single modality masked autoencoder(MAE)
 
@@ -121,27 +121,29 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
     - MAE는 prediction target으로 original input을 직접적으로 사용하기 때문에 training pipeline을 simplify함
     - MAE는 unmaksed token만을 사용하고, 이를 high maksing ratio와 combine시켜줌. → 연산량을 줄여줌
     - MAE는 audio-visual modal각각 seperate된 task에서는 좋은 성능을 보였음
-
 ## 2.2 Vanila audio-visual masked autoencoder(AV-MAE)
 
 - MAE가 지금까지 audio 와 video 각각의 modality 에 대해서는 적용되어 왔지만, audio-video multi modality learning에서는 사용된적없음.
 - 아래 사진에서와 같이, audio / image input을 tokenize(a^1,… a^512) / (v^1…v^196) 하고 768 차원으로 projection 시켜줌.
     
-    ![스크린샷 2023-10-11 오후 2.56.20.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-11_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_2.56.20.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1b7af0ab-dbf1-4d5b-b142-0c68508cdbe4){: width="40%" height="40%"}{: .center}
+
     
     - projection layer
         - 아마 mask concatenate 쪽인거같고, 관련된 식은 2 3인듯
             
-            ![스크린샷 2023-10-12 오전 10.47.17.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-12_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.47.17.png)
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/07260e86-f4b2-47bb-96b4-ecaa7a5022d8){: width="80%" height="80%"}{: .center}
+
             
             - Where E_a, E_v are the embeddings of the modality type
-    
-    ![스크린샷 2023-10-12 오전 10.48.49.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-12_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_10.48.49.png)
-    
+                
+                ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/835251e2-a42d-4e08-8657-6eda2c96c172){: width="80%" height="80%"}{: .center}
+                
     - E_j 는 joint encoding
     - Reconstruction loss
         
-        ![스크린샷 2023-10-12 오전 11.22.44.png](http://drive.google.com/uc?export=view&id=%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-10-12_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%258C%25E1%2585%25A5%25E1%2586%25AB_11.22.44.png)
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/447b5f79-cb7c-42a7-9162-3ff195df056c){: width="80%" height="80%"}{: .center}
+
         
 
 # 3 Code review
@@ -152,7 +154,7 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 
 - code
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1278acb9-bba9-43fc-a060-28ddf93b493d){: width="80%" height="80%"}{: .center}
     
     - input_f → 파일명(주소도 포함)
     - ext_len = 파일명 길이
@@ -169,7 +171,8 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 
 - extract_frame
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled%201.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/63f4fa1e-9aaf-4c08-bb62-2cfe64147c66){: width="80%" height="80%"}{: .center}
+
     
     - file 개수마다 호출됨
     - cv2.VideoCapture
@@ -188,20 +191,20 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 
 - sample table(class_labels_indices_as.csv)
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled%202.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/f0e0099c-e97a-4cee-81b4-b73bb093446f){: width="40%" height="40%"}{: .center}
     
     - display_name : label
     - mid : json파일과 매칭될 수 있는 label(unique key)
 - sample_json_as.json
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled%203.png)
-    
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/34d04377-0166-46ab-8d69-8897e759954e){: width="40%" height="40%"}{: .center}
+
 
 ## 3.3 **create_json_as.py**
 
 - code
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled%204.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/88631c0e-b657-4557-8bd2-3903526f3b59){: width="80%" height="80%"}{: .center}
     
     - 위의 sample_json_as.json 을 전처리 하는게 아니라, 진짜 metadata를 의미하는것. sample_json_as.json은 create_json_as의 결과물.
 
@@ -209,9 +212,9 @@ title: "[논문리뷰] Constrastive Audio-Visual Masked Autoencoder"
 
 ### 3.4.1 make_index_dict
 
-- 코드
+- code
     
-    ![Untitled](http://drive.google.com/uc?export=view&id=Untitled%205.png)
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/7521f65f-54cf-4988-b57f-c724d6bb1607){: width="40%" height="40%"}{: .center}
     
     - index_lookup
         - unique key와 index 매칭해줌
@@ -885,20 +888,3 @@ def forward(self, audio, imgs, mask_ratio_a=0.75, mask_ratio_v=0.75, mae_loss_we
     
             return a, v
     ```
-
-<br/>
-<br/>
-<div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://https-jisoo0-0-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
