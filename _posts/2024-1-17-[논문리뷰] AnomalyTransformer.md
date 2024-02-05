@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: 개념정리
+categories: 논문리뷰
 tags: anomaly_detection, time-series, transformer
 comments: true
 math: true

@@ -1,11 +1,11 @@
 ---
 layout: post
-categories: 개념정리
+categories: 논문리뷰, 코드리뷰
 tags: gcn, STGCN, dynamic_gcn
 comments: true
 math: true
 disqus: 'https-jisoo0-0-github-io' 
-title: "[논문리뷰] Learning dynamics and heterogeneity of spatial-temporal graph data for traffic forecasting"
+title: "[논문 및 코드 리뷰] Learning dynamics and heterogeneity of spatial-temporal graph data for traffic forecasting"
 ---
 출처
 > Guo, Shengnan, et al. "Learning dynamics and heterogeneity of spatial-temporal graph data for traffic forecasting." IEEE Transactions on Knowledge and Data Engineering 34.11 (2021): 5415-5428.
