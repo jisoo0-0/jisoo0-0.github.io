@@ -7,10 +7,12 @@ math: true
 disqus: 'https-jisoo0-0-github-io' 
 title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 ---
+출처
+> Chen, Baixu, et al. "Debiased self-training for semi-supervised learning." Advances in Neural Information Processing Systems 35 (2022): 32424-32437.
 
 
-**논문 및 사진 출처**
->Chen, Baixu, et al. "Debiased self-training for semi-supervised learning." Advances in Neural Information Processing Systems 35 (2022): 32424-32437.
+Copyright of figures and other materials in the paper belongs to original authors.
+
 
 
 # Abstract
@@ -27,12 +29,12 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 - self-training is an effective approach to deal with the lack of labeled data.
     - Although self-training has achieved great advances in benchmark datasets**, they still exhibit large training instability** and extreme **performance** **imbalance** across **classes**.
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ad52eb5b-ba29-466e-9dbe-27dbdc5c6b89){: width="30%" height="30%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ddc90149-9b6f-48d8-8104-97a7d8ba4bf9){: width="30%" height="30%"}{: .center}
         
         - see FixMatch
     - Besides, although FixMatch improves the average accuracy, **it also leads to the Matthew effect**, i.e., the accuracy of well-behaved categories is further increased while that of **poorly-behaved ones is decreased to nearly zero**
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/cd16eff2-b7e6-4157-bb76-9cdabc127587){: width="50%" height="50%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/da2eb029-c792-4bed-b268-cb523a06210e){: width="50%" height="50%"}{: .center}
         
 - The above findings are caused by the bias between the **pseudo labeling function** with the **unknown target labeling function.**
 - 저자는 bias issuue들을 두가지로 나누어서 생각했음
@@ -55,7 +57,7 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 - self training 속의 bias를 deviation between the learned decision hyperplanes and the true decision hyperplanes에 대응되며, 이는 모든 클래스에서 잘못된 수도 레이블로 표시된 샘플의 수로 측정될 수 있음.
 - 다양한 training condition아래에서 실험을 진행한 결과, nontrivial finding들을 발견함
     
-    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/5f04e195-9c42-41f8-a821-cf9fef555679){: width="70%" height="70%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3db564e9-add4-43b1-9ba9-286f4af1a08b){: width="50%" height="50%"}{: .center}
     
     - The sampling of labeled data will largely influence the self-training bias(Figure 1을 보면 알수 있음)
     - The pre-trained representations also affect the self-training bias.
@@ -67,17 +69,19 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
     - Data bias
         - figure 4의 blue area,
             
-            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3a29fcfd-e235-43ac-9838-4304d7a096ad){: width="20%" height="20%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/a013b28b-80d6-4539-9b25-c5a82d491d9d){: width="20%" height="20%"}{: .center}
             
         - conditional distrbution of x conditioned on **ground truth f*(x)**
             - 즉, bias가 없는 상황
             - 수도라벨러 f_pl
     - Training bias
         - figure 4의 yellow area
-            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e3934fd7-9966-4f79-974c-581493fa895d){: width="30%" height="30%"}{: .center}
+            
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/88f7339c-2e78-4312-af64-d9f1b3e0a3ec){: width="20%" height="20%"}{: .center}
+            
             - semi를 사용했을때의 상황을 나타냄.
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8ef87080-1c14-4f02-9a13-946bfc9120ac){: width="60%" height="60%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/8e39536a-2b08-4944-8d80-b5ee5f33395a){: width="50%" height="50%"}{: .center}
         
     - 본 논문에서는 figure4의 빨간색 area 에 해당되는 방법을 제안하고자 함.
 
@@ -85,7 +89,7 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 
 - The standard cross-entropy loss on weakly augmented labeled examples
     
-    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/778f3195-11b8-4754-9006-14041ba5b15c){: width="50%" height="50%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/0096decc-d0c3-480d-9f74-d26ac80240b9){: width="50%" height="50%"}{: .center}
     
     - ψ =feature generator
     - h = task-spacific head
@@ -101,9 +105,7 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 
 - Fixmatch의 training bias는 스스로 생성한 수도 라벨을 스스로 학습한다는 것에 있음. 이러한 문제를 해소하기 위해, 아래 figure 5(b), (c)와 같은 방법이 사용될 수 있음.
     
-    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ad4eac57-dc04-4913-a6d2-98acc6f601e9){: width="70%" height="70%"}{: .center}
-    
-
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b901ded9-b8cd-4ea2-af18-7370648b18b6){: width="50%" height="50%"}{: .center}
     
     - 하지만 (b)(c)방법에서 모두 수도 라벨을 생성하는 teacher model과 수도 라벨을 활용하는 student model에 강한 relationship이 형성되고, 이에 따라 training bias는 여전히 클 수 밖에 없음.
 - 이러한 training bias를 줄이기 위해서, task-specific head를 사용함
@@ -113,7 +115,7 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
         - figure5(d)에서 나와있듯, pseduo head h_pseduo 를 제안하는데 이는 feature generator ψ에 연결되어서 U에 있는 수도 라벨들로만 optimized됨.
         - 따라서 training objective는 아래와 같음.
             
-            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/86b32f1a-8f07-40e4-bb7e-9cce60bd6c75){: width="60%" height="60%"}{: .center}
+            ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b4fe2e5b-5dee-4186-9392-e65bfdcedc0d){: width="50%" height="50%"}{: .center}
             
 - 수도 라벨은 h으로부터 생성되는데, 독립적인 h_psudo에서 utilized되는 방식임.
 - h와h_pseudo가 같은 backbone network으로부터 feature을 받아온다고 해도, 이들의 파라미터가 독립적이기 때문에 pseudo head를 잘못된 수도 라벨으로 학습하는 것은 head h 에 직접적으로 오류를 축적시키기는 않을 것임.
@@ -123,7 +125,7 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
 
 - figure6(a)에서 확인할 수 있듯, data bias으로 인해서 각 class의 labeled sample들이 decision hyperplane들로부터의 거리가 각각 다를 수 있음.
     
-    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/ec9e58f0-d928-4ea0-b345-9462f0b9f5eb){: width="70%" height="70%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/b00fe485-28d5-4f0e-b9ee-9280169aca7e){: width="50%" height="50%"}{: .center}
     
     - 이는 학습된 hyperplane과 실제 decision hyperplane간의 간극으로 이어질 수 있는데 특히 적은 라벨을 가지고 있을 때 이런 현상이 자주 발생함.
     - 결과적으로 수도 라벨링은 이렇게 **biased decision hyperplane들에 가까운 points들에** **부정확한 수도 라벨**을 할 가능성이 높음.
@@ -134,15 +136,15 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
         - 이 케이스는 figure6(b)임.
 - 아래 식은 worst-case of task-specific head h를 찾는 것을 목적으로 함.
     
-    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/3b9ce13f-f05a-48ca-9452-bd14480e6ce8){: width="60%" height="60%"}{: .center}
+    ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/e25f0df6-1308-4ce3-bfee-8bbdd1c4e881){: width="50%" height="50%"}{: .center}
     
     - Note that Equation 6 measures the degree of data bias, which **depends on the feature representations generated by ψ**, thus we can adversarially optimize feature generator ψ to indirectly decrease the data bias,
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/47a53c03-8930-4aef-b263-db3184a7483c){: width="60%" height="60%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/cc95320b-f77d-42c0-b487-88f3d72c5a6e){: width="50%" height="50%"}{: .center}
         
     - 참고) 기존Fixmach의 loss 함수
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/1b6ae35b-5381-4a9a-83f8-4349f4742d3c){: width="60%" height="60%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/299d743e-d086-4d9d-9e74-ac8ab242d0fb){: width="50%" height="50%"}{: .center}
         
         - h : the task-specific head.
         - ψ : the feature generator
@@ -150,13 +152,13 @@ title: "[논문리뷰] Debiased Self-Training for Semi-Supervised Learning"
         - A : the strong augmentation function.
     - overall loss
         
-        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/77376cbc-edfc-4b78-a837-687e61e77c77){: width="30%" height="30%"}{: .center}
+        ![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/7aeb1fb5-4455-4768-831f-8de95308fc66){: width="60%" height="60%"}{: .center}
         
         - worst possible head h`에 대해서는 cross-entropy loss를 최대화하고,
         - feature generator, task-specific-head, h_pseudo에 대한 loss는 최소화함.
-    
-![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/11cca01d-63b0-4e25-9950-39c0d174e31b){: width="70%" height="70%"}{: .center}
+        
 
+![image](https://github.com/jisoo0-0/jisoo0-0.github.io/assets/130432190/38342850-8f76-40d2-8b4f-e1208989875e){: width="50%" height="50%"}{: .center}
 
 <br/>
 <br/>
