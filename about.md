@@ -17,7 +17,7 @@ March, 2019 - February, 2023
 *School of Software Convergence*   
 	- GPA: **4.24/4.5**
 
-**Korea University**, (MS/Ph.D) , *Adviser : Sung Won Han*    
+**Korea University**, (MS) , *Adviser : Sung Won Han*    
 March, 2023 – **Current**      
 *School of Industrial and Management Engineering*      
 Aritificial Intelligence And Data Analytics Lab, [http://aida.korea.ac.kr/](http://aida.korea.ac.kr/)
