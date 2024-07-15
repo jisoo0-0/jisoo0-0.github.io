@@ -61,9 +61,6 @@ September, 2019 – December, 2019
 **Ministry of Foreign Affairs Supporters**    
 December, 2019 – February, 2020      
 
-**LG Supporters(Think Earth)**    
-October, 2020 – December, 2020     
-
 **Study Group Mentoring(C++)**    
 February, 2022 – June, 2022    
 
