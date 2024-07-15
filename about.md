@@ -17,7 +17,7 @@ March, 2019 - February, 2023
 **Korea University** (MS) , *Adviser : Sung Won Han*    
 March, 2023 – **Current**      
 *School of Industrial and Management Engineering*      
-Aritificial Intelligence And Data Analytics Lab, [http://aida.korea.ac.kr/](http://aida.korea.ac.kr/)
+Aritificial Intelligence And Data Analytics Lab, [http://aida.korea.ac.kr/](http://aida.korea.ac.kr/) 
  
 
 
