@@ -22,14 +22,14 @@ For more updated info, visit here <a href="[url](https://www.linkedin.com/in/jis
 # <center>Projects</center>
 #### Development of an AI service platform based on Big Data  
 ###### February, 2021 – December, 2021   
-##### Hosted by the **Ministry of Land, Infrastructure and Transport
+###### Hosted by the Ministry of Land, Infrastructure and Transport
 ######  Role : Undergraduate researcher, Designing AI model for classifying image’s sentiment
 ###### Language : python   
 ######  Research Results : Software registration, Poster presentation(First Author), Results paper
 
 #### Drone’s object Detection with Artificial Intelligence    
 ###### February, 2021 – December, 2021
-##### On-campus assignments 
+###### On-campus assignments 
 ######  Role : Undergraduate researcher, Designing energy-efficient Tracking Algorithm for Drone
 ###### Language : python  
 ###### Research Results : Software registration, Patent application, Poster presentation(First Author)
