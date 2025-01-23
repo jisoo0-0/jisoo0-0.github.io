@@ -20,15 +20,15 @@ For more updated info, visit https://www.linkedin.com/in/jisu-k-1b694831b/
 ###### [Under review] Dogi Lim, Jun-Young Park, Yujin Ham, Jisu Kang, Seungwon Lee, Jian Cheng Bi, Seonghyeon Park, Junbeom Song, Ji-Sung Lee, Hyejung Lim, Sang-Ho Shin, Sung Won Han, Byeong Kwon Ju, 2D Hole-Arrayed Double Anode for Enhancing Outcoupling Efficiency of Organic Light-Emitting Diodes on Silicon Wafer (OLEDos), Submitted to ACS Photonics(IF : 7.0) on 11/18/2024.
 
 # <center>Projects</center>
-**Development of an AI service platform based on Big Data**     
-*February, 2021 – December, 2021*   
-Hosted by the **Ministry of Land, Infrastructure and Transport**    
-- Role   
+#### Development of an AI service platform based on Big Data**     
+###### February, 2021 – December, 2021*   
+###### Hosted by the **Ministry of Land, Infrastructure and Transport**    
+######  Role   
 	- Undergraduate researcher   
 	- Designing AI model for classifying image’s sentiment
-- Language
+###### Language
 	- python   
-- Research Results (Only the ones that I’ve participated in.)
+######  Research Results (Only the ones that I’ve participated in.)
 	- Software registration
 	- International Conference paper(First Author)
 	- Results paper
