@@ -20,15 +20,15 @@ For more updated info, visit here <a href="[url](https://www.linkedin.com/in/jis
 ###### [Under review] Dogi Lim, Jun-Young Park, Yujin Ham, Jisu Kang, Seungwon Lee, Jian Cheng Bi, Seonghyeon Park, Junbeom Song, Ji-Sung Lee, Hyejung Lim, Sang-Ho Shin, Sung Won Han, Byeong Kwon Ju, 2D Hole-Arrayed Double Anode for Enhancing Outcoupling Efficiency of Organic Light-Emitting Diodes on Silicon Wafer (OLEDos), Submitted to ACS Photonics(IF : 7.0) on 11/18/2024.
 
 # <center>Projects</center>
-#### Development of an AI service platform based on Big Data**     
-###### February, 2021 – December, 2021*   
-##### Hosted by the **Ministry of Land, Infrastructure and Transport**    
+#### Development of an AI service platform based on Big Data  
+###### February, 2021 – December, 2021   
+##### Hosted by the **Ministry of Land, Infrastructure and Transport
 ######  Role : Undergraduate researcher, Designing AI model for classifying image’s sentiment
 ###### Language : python   
 ######  Research Results : Software registration, Poster presentation(First Author), Results paper
 
-**Drone’s object Detection with Artificial Intelligence**   
-###### February, 2021 – December, 2021*   
+#### Drone’s object Detection with Artificial Intelligence    
+###### February, 2021 – December, 2021
 ##### On-campus assignments 
 ######  Role : Undergraduate researcher, Designing energy-efficient Tracking Algorithm for Drone
 ###### Language : python  
@@ -36,17 +36,17 @@ For more updated info, visit here <a href="[url](https://www.linkedin.com/in/jis
 
 
 # <center> EXTERNAL ACTIVITIES</center>
-**Seoul National University Hospital Interpreter Volunteering**    
-September, 2019 – December, 2019     
+##### Seoul National University Hospital Interpreter Volunteering
+###### September, 2019 – December, 2019     
 
-**Ministry of Foreign Affairs Supporters**    
-December, 2019 – February, 2020     
+##### Ministry of Foreign Affairs Supporters
+###### December, 2019 – February, 2020     
 
-**Study Group Mentoring(C++)**    
-February, 2022 – June, 2022    
+##### Study Group Mentoring(C++) 
+###### February, 2022 – June, 2022    
 
-**Study Group Mentoring(Python)**     
-February, 2022 – June, 2022    
+##### Study Group Mentoring(Python)   
+###### February, 2022 – June, 2022    
 
 
 
@@ -65,8 +65,8 @@ February, 2022 – June, 2022
 
 
 **Language**    
-	- Korean(native)    
-	- English(intermediate, tofel 106)
+######  Korean(native)    
+######  English(intermediate, tofel 106)
 
 
 
