@@ -3,7 +3,8 @@ layout: page
 title: About
 permalink: /about/
 ---
-For more updated info, visit here <a href="https://www.linkedin.com/in/jisu-k-1b694831b">here</a> 
+For more updated info, visit here <a href="https://www.linkedin.com/in/jisu-k-1b694831b">here</a>, and contact me via ji_soo_o@korea.ac.kr.
+
 
 # <center>Papers</center>
 **[Accepted]**
